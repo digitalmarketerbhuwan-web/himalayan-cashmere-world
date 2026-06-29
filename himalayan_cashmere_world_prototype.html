@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalayan Cashmere World | Authentic Handcrafted Luxury</title>
+    <meta name="description" content="Sustainably handcrafted in Nepal, refined for modern living. Discover the world's finest authentic Chyangra Pashmina shawls, blankets, and loungewear.">
+
+    <!-- Tailwind CSS for utility styles and high performance -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#094065',      /* Sophisticated Deep Blue - rgb(9, 64, 101) */
+                            secondary: '#E9E0D3',    /* Natural Linen */
+                            accent: '#C5A46D',       /* Himalayan Gold */
+                            bg: '#FAF8F5',           /* Soft Paper Background */
+                            text: '#262626',         /* Charcoal Gray */
+                            dark: '#052942',         /* Darker Deep Blue */
+                            linenLight: '#F3EDE4'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Cormorant Garamond (Luxury Serif) & Inter (Minimalist Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Himalayan Cashmere World",
+      "image": "images/logo-nhpc-final.png",
+      "@id": "https://himalayancashmereworld.com",
+      "url": "https://himalayancashmereworld.com",
+      "telephone": "+14372174757",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "18 Governor Grove Crescent",
+        "addressLocality": "Brampton",
+        "addressRegion": "ON",
+        "postalCode": "L6Y 1A6",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.6835,
+        "longitude": -79.7665
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61578139123355",
+        "https://www.instagram.com/cashmere_2009/",
+        "https://www.tiktok.com/@cashmere_2009"
+      ]
+    }
+    </script>
+
+    <!-- Global Custom Styles for Apple/Aesop Premium Aesthetic Finishing -->
+    <style>
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF8F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #094065;
+        }
+
+        ::selection {
+            background-color: #E9E0D3;
+            color: #094065;
+        }
+
+        .page-transition {
+            transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .link-underline {
+            position: relative;
+        }
+        .link-underline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: currentColor;
+            transform-origin: bottom right;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .link-underline:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-bg text-brand-text font-sans antialiased overflow-x-hidden">
+
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-primary text-brand-secondary px-4 py-2 z-50">
+        Skip to main content
+    </a>
+
+    <div class="bg-brand-primary text-brand-secondary text-[10px] tracking-[0.2em] uppercase py-2 px-4 text-center border-b border-white/5">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <span class="hidden md:inline-block">Free Priority Shipping across Canada & USA</span>
+            <span class="mx-auto md:mx-0 font-medium">✨ Ethically made in Nepal · Based in Canada · Since 2009</span>
+            <div class="hidden md:flex space-x-4">
+                <button onclick="changeCurrency('CAD')" id="curr-cad" class="font-bold opacity-100 transition-opacity">CAD ($)</button>
+                <span class="text-brand-accent/40">|</span>
+                <button onclick="changeCurrency('USD')" id="curr-usd" class="opacity-60 hover:opacity-100 transition-opacity">USD ($)</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-brand-bg/90 backdrop-blur-md border-b border-brand-primary/5 transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+
+            <!-- Left Side Logo Area -->
+            <div class="flex items-center space-x-4">
+                <button onclick="toggleMobileMenu()" class="lg:hidden text-brand-primary focus:outline-none" aria-label="Toggle Navigation Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+                <button onclick="navigateTo('home')" class="focus:outline-none flex items-center" aria-label="Home">
+                    <img src="images/logo-nhpc-final.png" alt="Himalayan Cashmere World" class="h-10 md:h-12 w-auto object-contain" onerror="this.onerror=null; this.outerHTML='<span class=\'font-serif text-lg md:text-xl tracking-[0.1em] text-brand-primary uppercase font-bold\'>Himalayan Cashmere</span>';">
+                </button>
+            </div>
+
+            <!-- Central Navigation Links -->
+            <nav class="hidden lg:flex space-x-8 text-xs tracking-[0.25em] uppercase text-brand-primary">
+                <button onclick="navigateTo('shop')" class="link-underline font-semibold">Shop</button>
+                <button onclick="navigateTo('story')" class="link-underline font-medium">Our Story</button>
+                <button onclick="navigateTo('sustainability')" class="link-underline font-medium">Sustainability</button>
+                <button onclick="navigateTo('care')" class="link-underline font-medium">Care Guide</button>
+                <button onclick="navigateTo('faq')" class="link-underline font-medium">FAQs</button>
+            </nav>
+
+            <!-- Right Side Actions -->
+            <div class="flex items-center space-x-6 text-xs tracking-[0.15em] uppercase text-brand-primary">
+                <button onclick="navigateTo('contact')" class="hidden md:inline-block link-underline font-medium">B2B / Wholesale</button>
+                <button onclick="toggleCartDrawer()" class="relative flex items-center space-x-2 focus:outline-none">
+                    <span class="hidden sm:inline-block tracking-widest font-medium">Cart</span>
+                    <span class="relative">
+                        <svg class="w-5 h-5 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                        <span id="cart-counter" class="absolute -top-1.5 -right-1.5 bg-brand-accent text-white font-sans text-[8px] font-bold rounded-full w-4 h-4 flex items-center justify-center scale-95">0</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu — outside header to avoid sticky/fixed stacking context issues on iOS -->
+    <div id="mobile-menu" class="fixed inset-y-0 left-0 w-80 max-w-sm bg-brand-bg shadow-2xl z-50 transform -translate-x-full transition-transform duration-500 ease-in-out">
+        <div class="p-6 h-full flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center mb-8">
+                    <img src="images/logo-nhpc-final.png" alt="Himalayan Cashmere World" class="h-8 w-auto object-contain" onerror="this.onerror=null; this.outerHTML='<span class=\'font-serif tracking-widest text-brand-primary uppercase text-sm font-bold\'>Himalayan Cashmere</span>';">
+                    <button onclick="toggleMobileMenu()" class="text-brand-primary" aria-label="Close menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-6 text-sm tracking-[0.2em] uppercase text-brand-primary">
+                    <button onclick="navigateTo('shop'); toggleMobileMenu()" class="text-left py-2 border-b border-brand-primary/10">Shop All Products</button>
+                    <button onclick="navigateTo('story'); toggleMobileMenu()" class="text-left py-2 border-b border-brand-primary/10">Our Story</button>
+                    <button onclick="navigateTo('sustainability'); toggleMobileMenu()" class="text-left py-2 border-b border-brand-primary/10">Sustainability</button>
+                    <button onclick="navigateTo('care'); toggleMobileMenu()" class="text-left py-2 border-b border-brand-primary/10">Care Guide</button>
+                    <button onclick="navigateTo('faq'); toggleMobileMenu()" class="text-left py-2 border-b border-brand-primary/10">FAQs & Help</button>
+                    <button onclick="navigateTo('contact'); toggleMobileMenu()" class="text-left py-2 border-b border-brand-primary/10">Corporate Gifting</button>
+                </nav>
+            </div>
+            <div class="border-t border-brand-primary/10 pt-6">
+                <p class="text-xs tracking-wider text-brand-primary/60 mb-2">Himalayan Cashmere World</p>
+                <p class="text-[10px] text-brand-primary/40 leading-relaxed">Handmade with precision in Kathmandu since 2009. Shipped worldwide from Brampton, Canada.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" onclick="toggleMobileMenu()" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 hidden"></div>
+
+    <main id="main-content" class="min-h-screen">
+
+        <!-- ================= HOMEPAGE SECTION ================= -->
+        <section id="view-home" class="page-transition block">
+
+            <div class="relative min-h-[92vh] overflow-hidden flex">
+
+                <!-- RIGHT: Banner image fills the full background -->
+                <img src="images/banner.png"
+                     alt="Himalayan Cashmere World — Authentic Pashmina Shawls and Stoles"
+                     class="absolute inset-0 w-full h-full object-cover object-center scale-105"
+                     id="hero-img">
+
+                <!-- Diagonal overlay: solid deep blue on the left, fading to transparent on the right -->
+                <div class="absolute inset-0"
+                     style="background: linear-gradient(105deg, #094065 0%, #094065 45%, rgba(9,64,101,0.82) 60%, rgba(9,64,101,0.2) 80%, transparent 100%);"></div>
+
+                <!-- Subtle diagonal rule line accent -->
+                <div class="absolute inset-0 pointer-events-none hidden lg:block overflow-hidden">
+                    <div class="absolute top-0 bottom-0"
+                         style="left: 52%; width: 2px; background: linear-gradient(to bottom, transparent, rgba(197,164,109,0.5) 20%, rgba(197,164,109,0.5) 80%, transparent); transform: skewX(-6deg);"></div>
+                </div>
+
+                <!-- LEFT: Text content — clearly readable over solid panel -->
+                <div class="relative z-10 w-full flex items-center">
+                    <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full py-24">
+                        <div class="max-w-xl space-y-7">
+
+                            <!-- Eyebrow -->
+                            <div class="flex items-center gap-3">
+                                <span class="block w-8 h-px bg-brand-accent"></span>
+                                <span class="text-[10px] tracking-[0.4em] uppercase text-brand-accent font-bold">Authentic Chyangra Cashmere · Since 2009</span>
+                            </div>
+
+                            <!-- Headline -->
+                            <h1 class="font-serif text-4xl sm:text-5xl lg:text-7xl font-light leading-[1.05] tracking-wide text-brand-secondary">
+                                Exceptional<br>
+                                Quality,<br>
+                                <span class="italic font-normal text-brand-accent">Unique Style.</span>
+                            </h1>
+
+                            <!-- Body -->
+                            <p class="font-sans text-xs sm:text-sm text-brand-secondary/75 tracking-wide font-light leading-relaxed max-w-md">
+                                Born in the heart of Nepal, we craft every cashmere piece with love, patience, and heritage. Each thread carries the warmth of Himalayan goats and the soul of skilled artisans. This is not just clothing — it's a story you can wear.
+                            </p>
+
+                            <!-- Trust badges -->
+                            <div class="flex flex-wrap gap-4 pt-1">
+                                <span class="text-[9px] tracking-[0.2em] uppercase text-brand-secondary/50 flex items-center gap-1.5">
+                                    <span class="w-1 h-1 rounded-full bg-brand-accent inline-block"></span> Ethically Made in Nepal
+                                </span>
+                                <span class="text-[9px] tracking-[0.2em] uppercase text-brand-secondary/50 flex items-center gap-1.5">
+                                    <span class="w-1 h-1 rounded-full bg-brand-accent inline-block"></span> Free CA & US Shipping
+                                </span>
+                                <span class="text-[9px] tracking-[0.2em] uppercase text-brand-secondary/50 flex items-center gap-1.5">
+                                    <span class="w-1 h-1 rounded-full bg-brand-accent inline-block"></span> 30-Day Returns
+                                </span>
+                            </div>
+
+                            <!-- CTA -->
+                            <div class="flex flex-wrap gap-4 pt-2">
+                                <button onclick="navigateTo('shop')"
+                                        class="bg-brand-accent text-brand-primary hover:bg-brand-secondary px-8 py-4 text-xs tracking-[0.25em] uppercase font-bold transition-all duration-300 shadow-lg rounded-sm">
+                                    Explore Collection
+                                </button>
+                                <button onclick="navigateTo('story')"
+                                        class="border border-brand-secondary/40 text-brand-secondary/80 hover:border-brand-secondary hover:text-brand-secondary px-8 py-4 text-xs tracking-[0.25em] uppercase font-light transition-all duration-300 rounded-sm">
+                                    Our Story
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll indicator bottom-left -->
+                <div class="absolute bottom-8 left-6 lg:left-12 flex items-center gap-3 text-brand-secondary/40">
+                    <div class="w-px h-10 bg-brand-secondary/20"></div>
+                    <span class="text-[9px] tracking-[0.3em] uppercase">Scroll</span>
+                </div>
+            </div>
+
+            <section class="py-24 bg-brand-bg px-6 lg:px-12 border-b border-brand-primary/5">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
+                    <div>
+                        <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-3 font-bold">The Soul of Himalayan Craftsmanship</span>
+                        <h2 class="font-serif text-3xl md:text-4xl text-brand-primary font-light leading-tight">From the Himalayas to Your Hands.</h2>
+                    </div>
+                    <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-12 text-sm text-brand-text/85">
+                        <div class="space-y-3">
+                            <h3 class="font-serif text-lg font-bold text-brand-primary">Authentic Chyangra Cashmere</h3>
+                            <p class="leading-relaxed font-light">Sourced exclusively from high alpine mountain goats of Nepal. Certified Chyangra Pashmina represents the highest global standard for luxury cashmere fibers, averaging under 15 microns in diameter.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-serif text-lg font-bold text-brand-primary">Traceable Fair Trade · Since 2009</h3>
+                            <p class="leading-relaxed font-light">By bypassing traditional retail intermediaries, we support Nepalese female artisans directly with equitable living wages, health support, and child development initiatives in Kathmandu Valley.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 bg-brand-bg px-6 lg:px-12">
+                <div class="max-w-7xl mx-auto mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <div>
+                        <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-2 font-bold">Handpicked Luxury</span>
+                        <h2 class="font-serif text-3xl md:text-5xl text-brand-primary font-light">The Best Sellers</h2>
+                    </div>
+                    <div>
+                        <button onclick="navigateTo('shop')" class="text-xs tracking-[0.2em] uppercase text-brand-primary font-semibold hover:text-brand-accent transition-colors flex items-center space-x-2">
+                            <span>Browse All Products</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Best Sellers Grid -->
+                <div id="homepage-featured" class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+                    <!-- Loaded dynamically via JavaScript -->
+                </div>
+            </section>
+
+            <section class="bg-brand-primary text-brand-secondary py-28 px-6 lg:px-12 relative overflow-hidden">
+                <!-- Subtle decorative background pattern -->
+                <div class="absolute inset-0 opacity-[0.03]" style="background-image: repeating-linear-gradient(45deg, #E9E0D3 0, #E9E0D3 1px, transparent 0, transparent 50%); background-size: 20px 20px;"></div>
+
+                <div class="max-w-7xl mx-auto relative z-10">
+                    <!-- Section label centered at top -->
+                    <div class="text-center mb-16">
+                        <span class="text-[10px] tracking-[0.4em] uppercase text-brand-accent font-bold inline-flex items-center gap-3">
+                            <span class="block w-8 h-px bg-brand-accent"></span>
+                            Craftsmanship Highlight
+                            <span class="block w-8 h-px bg-brand-accent"></span>
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                        <!-- Left: Text Content -->
+                        <div class="space-y-8">
+                            <h2 class="font-serif text-4xl md:text-6xl font-light leading-tight">
+                                The<br>
+                                <span class="italic text-brand-accent">120-Hour</span><br>
+                                Pashmina Stole
+                            </h2>
+
+                            <p class="text-brand-secondary/75 font-light text-base leading-relaxed border-l-2 border-brand-accent/40 pl-5">
+                                Every single stole is loomed by hand using a traditional wooden heirloom loom in Nepal. Sourced from the undercoat of Chyangra goats living above 14,000 feet in the Himalayas, the resulting fiber is as delicate as mist, incredibly thermal, and built to survive generations of wear.
+                            </p>
+
+                            <!-- Stats row -->
+                            <div class="grid grid-cols-3 gap-4 pt-2">
+                                <div class="border border-white/10 p-4 text-center">
+                                    <span class="block font-serif text-3xl text-brand-accent mb-1">100%</span>
+                                    <span class="block text-[8px] tracking-[0.2em] uppercase text-brand-secondary/50 leading-tight">Pure<br>Cashmere</span>
+                                </div>
+                                <div class="border border-white/10 p-4 text-center">
+                                    <span class="block font-serif text-3xl text-brand-accent mb-1">120+</span>
+                                    <span class="block text-[8px] tracking-[0.2em] uppercase text-brand-secondary/50 leading-tight">Hours<br>Loomed</span>
+                                </div>
+                                <div class="border border-white/10 p-4 text-center">
+                                    <span class="block font-serif text-3xl text-brand-accent mb-1">Azo‑Free</span>
+                                    <span class="block text-[8px] tracking-[0.2em] uppercase text-brand-secondary/50 leading-tight">Swiss<br>Dyes</span>
+                                </div>
+                            </div>
+
+                            <!-- Feature list -->
+                            <ul class="space-y-3 text-sm text-brand-secondary/70 font-light">
+                                <li class="flex items-start gap-3"><span class="text-brand-accent mt-0.5">—</span> Ethically combed during the spring molting season</li>
+                                <li class="flex items-start gap-3"><span class="text-brand-accent mt-0.5">—</span> Hand-fringed edges taking up to 8 hours per piece</li>
+                                <li class="flex items-start gap-3"><span class="text-brand-accent mt-0.5">—</span> Woven by skilled female artisans in Kathmandu Valley</li>
+                            </ul>
+
+                            <div>
+                                <button onclick="navigateTo('shop')" class="group inline-flex items-center gap-3 border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-brand-primary px-8 py-3 text-xs tracking-widest uppercase transition-all duration-300 rounded-sm font-semibold">
+                                    Shop the Collection
+                                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right: Image — smaller, with floating quote card -->
+                        <div class="flex justify-center lg:justify-end">
+                            <div class="relative w-full max-w-xs lg:max-w-sm">
+                                <!-- Main image — color, no grayscale -->
+                                <div class="aspect-[3/4] overflow-hidden shadow-2xl">
+                                    <img src="images/artisan-weaving-hd.jpg"
+                                         alt="Artisan hand-looming cashmere in Kathmandu Nepal"
+                                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-[2s]" loading="lazy">
+                                </div>
+                                <!-- Floating quote card -->
+                                <div class="absolute -bottom-5 -left-8 bg-brand-secondary text-brand-primary p-5 max-w-[190px] shadow-xl hidden md:block">
+                                    <p class="font-serif text-xs italic font-medium leading-relaxed">"To touch a Himalayan Cashmere piece is to feel centuries of mountain dedication."</p>
+                                </div>
+                                <!-- Decorative gold corner accent -->
+                                <div class="absolute -top-3 -right-3 w-10 h-10 border-t-2 border-r-2 border-brand-accent hidden md:block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 bg-brand-bg px-6 lg:px-12 border-t border-brand-primary/5">
+                <div class="max-w-7xl mx-auto text-center mb-12">
+                    <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-2 font-bold">Visual Narrative</span>
+                    <h2 class="font-serif text-3xl md:text-4xl text-brand-primary font-light">As Seen in Himalayan Cashmere World</h2>
+                    <p class="text-xs tracking-[0.15em] uppercase text-brand-primary/60 mt-2 font-semibold">@cashmere_2009</p>
+                </div>
+                <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="aspect-square bg-neutral-200 overflow-hidden group relative">
+                        <img src="images/product-6022.png" alt="100% Cashmere Jali Stole" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="aspect-square bg-neutral-200 overflow-hidden group relative">
+                        <img src="images/product-6649.png" alt="3 Colored checked stole" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="aspect-square bg-neutral-200 overflow-hidden group relative">
+                        <img src="images/product-6715.png" alt="Multi-colored check stole" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                    </div>
+                    <div class="aspect-square bg-neutral-200 overflow-hidden group relative">
+                        <img src="images/product-6791.png" alt="Basket weave stole" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- ================= SHOP SECTION ================= -->
+        <section id="view-shop" class="page-transition hidden py-16 bg-brand-bg px-6 lg:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="border-b border-brand-primary/10 pb-8 mb-12">
+                    <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-2 font-bold">Curated Storefront</span>
+                    <h1 class="font-serif text-4xl lg:text-6xl text-brand-primary font-light">The Cashmere Archive</h1>
+                    <p class="text-brand-primary/60 text-xs md:text-sm tracking-wide font-light max-w-xl mt-4">Browse our curated collections — shawls, stoles, sweaters, ponchos, and fine accessories. Each piece is hand-crafted in Nepal and shipped directly to you in Canada.</p>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-12">
+
+                    <!-- Left Side Filters -->
+                    <aside class="w-full lg:w-64 space-y-8 flex-shrink-0">
+                        <div class="space-y-4">
+                            <h3 class="text-xs tracking-[0.2em] uppercase font-bold text-brand-primary">Category</h3>
+                            <div class="flex flex-wrap lg:flex-col gap-2">
+                                <button onclick="filterProducts('all')" class="text-left text-xs tracking-widest uppercase hover:text-brand-accent transition-colors font-semibold text-brand-primary border border-brand-primary/20 lg:border-none px-3 py-1 lg:px-0">All Products</button>
+                                <button onclick="filterProducts('wraps')" class="text-left text-xs tracking-widest uppercase hover:text-brand-accent transition-colors text-brand-primary/60 border border-brand-primary/20 lg:border-none px-3 py-1 lg:px-0">Shawls & Stoles</button>
+                                <button onclick="filterProducts('apparel')" class="text-left text-xs tracking-widest uppercase hover:text-brand-accent transition-colors text-brand-primary/60 border border-brand-primary/20 lg:border-none px-3 py-1 lg:px-0">Sweaters & Ponchos</button>
+                                <button onclick="filterProducts('accessories')" class="text-left text-xs tracking-widest uppercase hover:text-brand-accent transition-colors text-brand-primary/60 border border-brand-primary/20 lg:border-none px-3 py-1 lg:px-0">Accessories</button>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-brand-primary/10 pt-6 space-y-4">
+                            <h3 class="text-xs tracking-[0.2em] uppercase font-bold text-brand-primary">Sorting</h3>
+                            <select onchange="sortProducts(this.value)" class="w-full bg-white border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent">
+                                <option value="default">Featured Selection</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+
+                        <div class="bg-brand-secondary/30 p-6 rounded-sm text-xs text-brand-primary">
+                            <p class="font-bold tracking-[0.15em] uppercase mb-2">Sustainable Assurance</p>
+                            <p class="font-light leading-relaxed mb-4">Every order ships globally in recyclable flax-linen bags with a premium custom cedar block for optimal protection.</p>
+                            <button onclick="navigateTo('care')" class="underline tracking-wider font-semibold">View Care Guide</button>
+                        </div>
+                    </aside>
+
+                    <!-- Right Side Product Grid -->
+                    <div class="flex-grow">
+                        <div id="shop-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+                            <!-- Filled dynamically via JS -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= PRODUCT PAGE SECTION ================= -->
+        <section id="view-product" class="page-transition hidden py-16 bg-brand-bg px-6 lg:px-12">
+            <div class="max-w-7xl mx-auto">
+                <button onclick="navigateTo('shop')" class="text-xs tracking-[0.2em] uppercase text-brand-primary/60 hover:text-brand-primary mb-12 flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    <span>Back to all cashmere</span>
+                </button>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16" id="product-detail-area">
+                    <!-- Loaded dynamically in JS -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= OUR STORY SECTION ================= -->
+        <section id="view-story" class="page-transition hidden py-24 bg-brand-bg">
+            <div class="max-w-4xl mx-auto px-6 text-center space-y-8 mb-20">
+                <span class="text-xs tracking-[0.3em] uppercase text-brand-accent font-bold block">Since 2009 — Crafted in the Clouds</span>
+                <h1 class="font-serif text-4xl sm:text-6xl text-brand-primary font-light leading-tight">Handloomed with devotion. Refined in Canada.</h1>
+                <p class="text-base leading-relaxed text-brand-text/80 font-light max-w-2xl mx-auto">
+                    Since 2009, we've been sharing the warmth and beauty of Himalayan cashmere with people who value tradition and quality. Born in the heart of Nepal, we craft every cashmere piece with love, patience, and heritage. Each thread carries the warmth of Himalayan goats and the soul of skilled artisans. This is not just clothing — it's a story you can wear.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 mb-24">
+                <div class="aspect-[16/10] overflow-hidden bg-zinc-200">
+                    <img src="images/artisan-weaving-hd.jpg" alt="Artisan hand-looming process in Kathmandu Nepal" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col justify-center space-y-6">
+                    <span class="text-xs tracking-[0.2em] uppercase text-brand-accent font-bold">1. Sourcing ethically</span>
+                    <h3 class="font-serif text-2xl text-brand-primary font-bold">The High-Alpine Undercoat</h3>
+                    <p class="text-base text-brand-text/80 font-light leading-relaxed">
+                        To survive extreme sub-zero temperatures of -40°C in winter, the Himalayan goat grows an extremely fine undercoat of thermal wool. This raw wool is ethically combed by local nomadic herders in the spring, protecting the goats and creating the raw luxurious ingredient for our collection.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto px-6">
+                <div class="flex flex-col justify-center space-y-6 md:order-2">
+                    <span class="text-xs tracking-[0.2em] uppercase text-brand-accent font-bold">2. Artisan Women</span>
+                    <h3 class="font-serif text-2xl text-brand-primary font-bold">Livelihoods in Kathmandu</h3>
+                    <p class="text-base text-brand-text/80 font-light leading-relaxed">
+                        Our workshop in Kathmandu, Nepal, proudly prioritizes skilled female weavers, empowering them with economic independence. Every purchase translates into direct school bursaries for their children, comprehensive health benefits, and safe, well-lit spaces where they can preserve traditional hand-loom crafting styles.
+                    </p>
+                </div>
+                <div class="aspect-[16/10] overflow-hidden bg-zinc-200 md:order-1">
+                    <img src="images/hero-banner.jpg" alt="Skilled artisan weaving cashmere in Nepal" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SUSTAINABILITY SECTION ================= -->
+        <section id="view-sustainability" class="page-transition hidden py-24 bg-brand-bg px-6 lg:px-12">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+                <span class="text-xs tracking-[0.3em] uppercase text-brand-accent font-bold block">Absolute Transparency</span>
+                <h1 class="font-serif text-4xl sm:text-6xl text-brand-primary font-light">Traceable Luxury</h1>
+                <p class="text-base text-brand-text/80 leading-relaxed font-light">
+                    True luxury requires strict ethical principles. We are dedicated to maintaining a transparent, carbon-offset manufacturing loop that respects resources, animals, and artisans alike. All products are handmade using Swiss azo-free dyes — skin-safe, eco-friendly, and true to the natural softness of cashmere.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-12">
+                    <div class="p-6 bg-white border border-brand-primary/5 shadow-sm rounded-sm">
+                        <span class="font-serif text-3xl text-brand-accent block mb-2">15 microns</span>
+                        <p class="text-[10px] tracking-wider uppercase text-brand-primary/60 font-bold mb-2">Supreme Softness</p>
+                        <p class="text-sm text-brand-text/70 leading-relaxed">We select only premium-grade cashmere to ensure exceptional insulation warmth, breathability, and lifelong softness.</p>
+                    </div>
+                    <div class="p-6 bg-white border border-brand-primary/5 shadow-sm rounded-sm">
+                        <span class="font-serif text-3xl text-brand-accent block mb-2">Azo-Free</span>
+                        <p class="text-[10px] tracking-wider uppercase text-brand-primary/60 font-bold mb-2">Swiss Dyeing</p>
+                        <p class="text-sm text-brand-text/70 leading-relaxed">No heavy metals or hazardous chemicals are used in coloring, maintaining neutral skin pH and clean local mountain waterways.</p>
+                    </div>
+                    <div class="p-6 bg-white border border-brand-primary/5 shadow-sm rounded-sm">
+                        <span class="font-serif text-3xl text-brand-accent block mb-2">Plastic-Free</span>
+                        <p class="text-[10px] tracking-wider uppercase text-brand-primary/60 font-bold mb-2">Conscious Packing</p>
+                        <p class="text-sm text-brand-text/70 leading-relaxed">We only package products with organic flax linen pouches, handmade Nepali Lokta paper cards, and recyclable mailing tubes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= CARE GUIDE SECTION ================= -->
+        <section id="view-care" class="page-transition hidden py-24 bg-brand-bg px-6 lg:px-12">
+            <div class="max-w-4xl mx-auto">
+                <span class="text-xs tracking-[0.3em] uppercase text-brand-accent font-bold block text-center mb-2">The Longevity Method</span>
+                <h1 class="font-serif text-4xl sm:text-5xl text-brand-primary text-center font-light mb-16">How to Care for Cashmere</h1>
+
+                <div class="space-y-12">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start pb-8 border-b border-brand-primary/10">
+                        <span class="font-serif text-2xl text-brand-primary font-bold">1. Wash Rarely</span>
+                        <div class="md:col-span-2 text-sm text-brand-text/80 space-y-3 font-light">
+                            <p>Cashmere has natural self-cleaning oils that repel dirt and odors. Try hanging your wrap outdoors on a crisp, dry day to refresh it. When necessary, gently hand-wash in cold water with delicate baby soap or natural olive detergent.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start pb-8 border-b border-brand-primary/10">
+                        <span class="font-serif text-2xl text-brand-primary font-bold">2. Dry & Press</span>
+                        <div class="md:col-span-2 text-sm text-brand-text/80 space-y-3 font-light">
+                            <p>Never wring or twist cashmere. Lay it flat on a clean dry towel and gently roll to absorb remaining water. Reshape and air-dry flat away from direct sunlight. Cool iron through a damp cotton pressing cloth to restore pristine loft.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+                        <span class="font-serif text-2xl text-brand-primary font-bold">3. Cedar Protection</span>
+                        <div class="md:col-span-2 text-sm text-brand-text/80 space-y-3 font-light">
+                            <p>Store your clean items folded flat inside your organic flax pouch with a natural cedar block. This protects raw fibers from moisture and moths. Never hang premium luxury knitwear, as this can distort its shape over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT / WHOLESALE SECTION ================= -->
+        <section id="view-contact" class="page-transition hidden py-24 bg-brand-bg px-6 lg:px-12">
+            <div class="max-w-3xl mx-auto bg-white border border-brand-primary/5 p-8 md:p-12 shadow-sm rounded-sm">
+                <span class="text-xs tracking-[0.3em] uppercase text-brand-accent font-bold block mb-2">B2B / Concierge Services</span>
+                <h1 class="font-serif text-3xl md:text-4xl text-brand-primary font-light mb-4">Corporate Gifting & Wholesale</h1>
+                <p class="text-base text-brand-text/85 mb-8 font-light leading-relaxed">Elevate your executive gifting with personalized monogramming and custom dyes on premium Himalayan Cashmere products. Fill out the request form below or reach us directly at <a href="mailto:cashmereworld2@gmail.com" class="underline text-brand-primary hover:text-brand-accent">cashmereworld2@gmail.com</a> or <a href="tel:+14372174757" class="underline text-brand-primary hover:text-brand-accent">437-217-4757</a>.</p>
+
+                <form onsubmit="handleContactSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] tracking-widest uppercase text-brand-primary/70 mb-2 font-bold">Contact Name</label>
+                            <input type="text" required class="w-full bg-brand-bg/60 border border-brand-primary/10 p-3 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] tracking-widest uppercase text-brand-primary/70 mb-2 font-bold">Company / Organization</label>
+                            <input type="text" class="w-full bg-brand-bg/60 border border-brand-primary/10 p-3 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] tracking-widest uppercase text-brand-primary/70 mb-2 font-bold">Work Email Address</label>
+                        <input type="email" required class="w-full bg-brand-bg/60 border border-brand-primary/10 p-3 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] tracking-widest uppercase text-brand-primary/70 mb-2 font-bold">Project Details & Quantities Required</label>
+                        <textarea rows="4" required class="w-full bg-brand-bg/60 border border-brand-primary/10 p-3 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent" placeholder="Tell us about your event, timing, customized monogramming needs..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-primary text-brand-secondary hover:bg-brand-dark hover:text-white py-4 text-xs tracking-[0.2em] uppercase font-bold transition-colors">
+                        Submit Luxury Concierge Request
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- ================= FAQ SECTION ================= -->
+        <section id="view-faq" class="page-transition hidden py-24 bg-brand-bg px-6 lg:px-12">
+            <div class="max-w-3xl mx-auto">
+                <span class="text-xs tracking-[0.3em] uppercase text-brand-accent font-bold block text-center mb-2">Concierge Desk</span>
+                <h1 class="font-serif text-3xl sm:text-4xl text-brand-primary text-center font-light mb-12">Frequently Asked Questions</h1>
+
+                <div class="space-y-4">
+                    <div class="border-b border-brand-primary/10 pb-4">
+                        <button onclick="toggleAccordion('faq1')" class="w-full flex justify-between items-center py-2 text-left text-brand-primary font-serif text-lg focus:outline-none">
+                            <span class="font-bold">How can I confirm my pashmina is authentic?</span>
+                            <span class="text-xs font-sans text-brand-accent">+</span>
+                        </button>
+                        <div id="faq1" class="hidden mt-2 text-sm text-brand-text/80 leading-relaxed font-light space-y-2">
+                            <p>Every pashmina stole is woven with official Nepal Ministry of Industry standard yarn and is accompanied by a luxury registration card. You can also spot its authenticity by looking for hand-fringed ends and its light weight coupled with supreme warming capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-brand-primary/10 pb-4">
+                        <button onclick="toggleAccordion('faq2')" class="w-full flex justify-between items-center py-2 text-left text-brand-primary font-serif text-lg focus:outline-none">
+                            <span class="font-bold">What are the shipping and return terms for Canada & US orders?</span>
+                            <span class="text-xs font-sans text-brand-accent">+</span>
+                        </button>
+                        <div id="faq2" class="hidden mt-2 text-sm text-brand-text/80 leading-relaxed font-light space-y-2">
+                            <p>We provide free standard shipping across Canada and the USA. If your items are in original, unworn condition, we gladly offer free returns and exchanges within 30 days of receiving your order.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-brand-primary/10 pb-4">
+                        <button onclick="toggleAccordion('faq3')" class="w-full flex justify-between items-center py-2 text-left text-brand-primary font-serif text-lg focus:outline-none">
+                            <span class="font-bold">Are your dyes organic and natural?</span>
+                            <span class="text-xs font-sans text-brand-accent">+</span>
+                        </button>
+                        <div id="faq3" class="hidden mt-2 text-sm text-brand-text/80 leading-relaxed font-light space-y-2">
+                            <p>We use non-toxic, eco-friendly Swiss dyes. They are certified Azo-free and safe for skin contact, maintaining our commitment to zero heavy-metal pollution during production in Kathmandu.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-brand-primary/10 pb-4">
+                        <button onclick="toggleAccordion('faq4')" class="w-full flex justify-between items-center py-2 text-left text-brand-primary font-serif text-lg focus:outline-none">
+                            <span class="font-bold">Do you offer corporate gifting or wholesale pricing?</span>
+                            <span class="text-xs font-sans text-brand-accent">+</span>
+                        </button>
+                        <div id="faq4" class="hidden mt-2 text-sm text-brand-text/80 leading-relaxed font-light space-y-2">
+                            <p>Yes — we offer wholesale pricing, custom monogramming with Himalayan Gold thread, and bespoke dyeing for corporate orders. Contact us at <a href="mailto:cashmereworld2@gmail.com" class="underline">cashmereworld2@gmail.com</a> or call 437-217-4757.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= PRIVACY POLICY ================= -->
+        <section id="view-privacy" class="page-transition hidden py-24 bg-brand-bg px-6 lg:px-12">
+            <div class="max-w-3xl mx-auto">
+
+                <div class="border-b border-brand-primary/10 pb-10 mb-12 text-center">
+                    <span class="text-xs tracking-[0.3em] uppercase text-brand-accent font-bold block mb-3">Legal</span>
+                    <h1 class="font-serif text-4xl sm:text-5xl text-brand-primary font-light mb-4">Privacy Policy</h1>
+                    <p class="text-xs text-brand-primary/50 font-light">Last Updated: June 16, 2026 &nbsp;·&nbsp; Effective Date: June 16, 2026</p>
+                </div>
+
+                <div class="prose-custom space-y-10 text-base text-brand-text/80 font-light leading-relaxed">
+
+                    <div class="bg-brand-secondary/20 border-l-4 border-brand-accent p-5 rounded-sm">
+                        <p class="text-xs text-brand-primary font-light leading-relaxed">Himalayan Cashmere World Inc. ("we", "us", "our") is committed to protecting the personal information of our customers and website visitors in accordance with Canada's <strong class="font-semibold">Personal Information Protection and Electronic Documents Act (PIPEDA)</strong> and applicable provincial privacy legislation, including Quebec's <em>Law 25</em>. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information.</p>
+                    </div>
+
+                    <!-- 1 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">01</span> Who We Are
+                        </h2>
+                        <p>Himalayan Cashmere World Inc. is a Canadian luxury lifestyle company that handcrafts authentic Chyangra cashmere products in Kathmandu, Nepal, and ships them directly to customers worldwide from our base in Brampton, Ontario, Canada.</p>
+                        <div class="bg-white border border-brand-primary/5 p-4 rounded-sm text-xs space-y-1">
+                            <p><strong class="text-brand-primary font-semibold">Privacy Officer / Data Controller</strong></p>
+                            <p>Himalayan Cashmere World Inc.</p>
+                            <p>18 Governor Grove Crescent, Brampton, ON L6Y 1A6, Canada</p>
+                            <p>Email: <a href="mailto:cashmereworld2@gmail.com" class="text-brand-accent underline">cashmereworld2@gmail.com</a></p>
+                            <p>Phone: <a href="tel:+14372174757" class="text-brand-accent underline">437-217-4757</a></p>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">02</span> Information We Collect
+                        </h2>
+                        <p>We collect personal information only to the extent necessary to provide our products and services. The categories of information we may collect include:</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="text-brand-primary font-semibold">Identity Data:</strong> Full name, billing name, monogram initials.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="text-brand-primary font-semibold">Contact Data:</strong> Shipping and billing address, email address, telephone number.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="text-brand-primary font-semibold">Transaction Data:</strong> Details of products purchased, order value, payment method type (we do not store full card numbers).</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="text-brand-primary font-semibold">Technical Data:</strong> IP address, browser type and version, time zone setting, device identifiers, and pages visited.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="text-brand-primary font-semibold">Marketing Data:</strong> Your preferences for receiving communications from us, newsletter subscription status.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="text-brand-primary font-semibold">Communications Data:</strong> Content of any inquiry, wholesale request, or support message you send us.</span></li>
+                        </ul>
+                        <p>We do <strong class="font-semibold text-brand-primary">not</strong> knowingly collect personal information from children under 13 years of age.</p>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">03</span> How We Collect Information
+                        </h2>
+                        <p>We collect personal information through:</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Direct interactions — when you place an order, fill out a contact or wholesale form, subscribe to our newsletter, or contact us by email or phone.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Automated technologies — cookies, web beacons, and server logs when you browse our website.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Third-party service providers — Shopify (our e-commerce platform), Stripe or PayPal (payment processors), and shipping carriers.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">04</span> How We Use Your Information
+                        </h2>
+                        <p>Under PIPEDA, we use personal information only for the purposes for which it was collected or with your consent. We use your data to:</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Process and fulfil your orders, including custom monogramming and shipping.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Communicate with you about your order status, tracking, and delivery.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Respond to your wholesale, corporate gifting, or general inquiries.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Send newsletter and marketing communications, where you have given express consent.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Improve and personalise your browsing experience on our website.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Prevent fraud, protect our legal rights, and comply with applicable law.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">05</span> Cookies & Tracking Technologies
+                        </h2>
+                        <p>We use cookies and similar tracking technologies to improve site functionality and analyse usage. These include:</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Strictly Necessary Cookies:</strong> Required for the website to function (e.g., shopping cart, session management).</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Analytics Cookies:</strong> Help us understand how visitors interact with our site (e.g., Google Analytics).</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Marketing Cookies:</strong> Used to deliver relevant advertisements on third-party platforms (e.g., Meta Pixel for Instagram/Facebook).</span></li>
+                        </ul>
+                        <p>You may disable cookies through your browser settings at any time. Doing so may affect the functionality of certain areas of our website.</p>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">06</span> Sharing Your Information
+                        </h2>
+                        <p>We do not sell, rent, or trade your personal information. We may share your information only with:</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Payment Processors</strong> (Stripe, PayPal, Shop Pay) — to securely process your payment. They are bound by their own PCI-DSS compliant privacy policies.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Shipping Carriers</strong> (Canada Post, FedEx, UPS) — to deliver your order to the address you provide.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">E-commerce Platform</strong> (Shopify Inc., based in Ottawa, Canada) — to operate our online storefront.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Legal Authorities</strong> — where required by Canadian law, a court order, or government regulation.</span></li>
+                        </ul>
+                        <p>Any third-party service provider we work with is contractually obligated to protect your information and use it only for the specific purpose for which it was shared.</p>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">07</span> Cross-Border Data Transfers
+                        </h2>
+                        <p>Our website is hosted and operated by Shopify Inc. (Canada). Some service providers, such as Google Analytics and payment processors, may process your data in the United States or other jurisdictions. Where such transfers occur, we ensure appropriate safeguards are in place in accordance with PIPEDA requirements. By using our website, you acknowledge that your information may be transferred to and processed in other countries.</p>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">08</span> Data Retention
+                        </h2>
+                        <p>We retain your personal information only as long as necessary to fulfil the purposes for which it was collected:</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Order records:</strong> Retained for 7 years for tax and accounting compliance under the <em>Canada Revenue Agency</em> requirements.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Marketing data:</strong> Retained until you withdraw consent or unsubscribe.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Website analytics:</strong> Retained for up to 26 months in anonymised form.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">09</span> Your Rights Under PIPEDA
+                        </h2>
+                        <p>As a Canadian resident, you have the right to:</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Access</strong> the personal information we hold about you.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Correct</strong> any inaccurate or incomplete personal information.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Withdraw consent</strong> to our processing at any time (subject to legal or contractual restrictions).</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Lodge a complaint</strong> with the Office of the Privacy Commissioner of Canada (OPC) at <a href="https://www.priv.gc.ca" target="_blank" rel="noopener" class="text-brand-accent underline">www.priv.gc.ca</a>.</span></li>
+                        </ul>
+                        <p>To exercise any of these rights, please contact our Privacy Officer at <a href="mailto:cashmereworld2@gmail.com" class="text-brand-accent underline">cashmereworld2@gmail.com</a>. We will respond within <strong class="font-semibold text-brand-primary">30 days</strong> as required under PIPEDA.</p>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">10</span> Security Safeguards
+                        </h2>
+                        <p>We implement industry-standard administrative, technical, and physical security measures to protect your personal information against unauthorised access, disclosure, alteration, or destruction. These include SSL/TLS encryption for all data transmissions, secure payment processing via PCI-DSS compliant providers, and restricted staff access on a need-to-know basis.</p>
+                        <p>In the event of a data breach that poses a real risk of significant harm, we will notify affected individuals and the Office of the Privacy Commissioner of Canada as required by law.</p>
+                    </div>
+
+                    <!-- 11 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">11</span> Changes to This Policy
+                        </h2>
+                        <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will post the revised policy on this page with the updated "Last Updated" date. We encourage you to review this policy periodically. Continued use of our website following any update constitutes acceptance of the revised policy.</p>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="bg-brand-primary text-brand-secondary p-8 rounded-sm space-y-3">
+                        <h2 class="font-serif text-xl font-light">Questions About This Policy?</h2>
+                        <p class="text-brand-secondary/75 text-xs leading-relaxed">If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact our Privacy Officer:</p>
+                        <div class="text-xs text-brand-secondary/80 space-y-1 pt-2">
+                            <p class="font-semibold text-brand-secondary">Himalayan Cashmere World Inc.</p>
+                            <p>18 Governor Grove Crescent, Brampton, ON L6Y 1A6</p>
+                            <p>Email: <a href="mailto:cashmereworld2@gmail.com" class="text-brand-accent underline">cashmereworld2@gmail.com</a></p>
+                            <p>Phone: <a href="tel:+14372174757" class="text-brand-accent underline">437-217-4757</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= TERMS & CONDITIONS ================= -->
+        <section id="view-terms" class="page-transition hidden py-24 bg-brand-bg px-6 lg:px-12">
+            <div class="max-w-3xl mx-auto">
+
+                <div class="border-b border-brand-primary/10 pb-10 mb-12 text-center">
+                    <span class="text-xs tracking-[0.3em] uppercase text-brand-accent font-bold block mb-3">Legal</span>
+                    <h1 class="font-serif text-4xl sm:text-5xl text-brand-primary font-light mb-4">Terms &amp; Conditions</h1>
+                    <p class="text-xs text-brand-primary/50 font-light">Last Updated: June 16, 2026 &nbsp;·&nbsp; Governing Law: Ontario, Canada</p>
+                </div>
+
+                <div class="space-y-10 text-base text-brand-text/80 font-light leading-relaxed">
+
+                    <div class="bg-brand-secondary/20 border-l-4 border-brand-accent p-5 rounded-sm">
+                        <p class="text-xs text-brand-primary font-light leading-relaxed">Please read these Terms &amp; Conditions carefully before using the Himalayan Cashmere World website or placing an order. By accessing our website or completing a purchase, you agree to be bound by these terms. If you do not agree, please do not use our website.</p>
+                    </div>
+
+                    <!-- 1 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">01</span> About Us
+                        </h2>
+                        <p>This website is operated by <strong class="font-semibold text-brand-primary">Himalayan Cashmere World Inc.</strong>, a company incorporated in Ontario, Canada. Our registered address is 18 Governor Grove Crescent, Brampton, ON L6Y 1A6. References to "we", "us", or "our" in these Terms refer to Himalayan Cashmere World Inc.</p>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">02</span> Use of This Website
+                        </h2>
+                        <p>You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of others. You must not:</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Use this website in any way that violates applicable Canadian or international law or regulation.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Transmit any unsolicited or unauthorised advertising or promotional material (spam).</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Attempt to gain unauthorised access to any part of our website, servers, or databases.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span>Reproduce, duplicate, copy, or resell any part of our website or its content without express written permission.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">03</span> Products & Pricing
+                        </h2>
+                        <p>All prices displayed on our website are in <strong class="font-semibold text-brand-primary">Canadian Dollars (CAD)</strong> unless you select otherwise. Prices are subject to change without notice. We reserve the right to modify, discontinue, or limit the availability of any product at any time.</p>
+                        <p>We make every effort to display accurate product colours, textures, and dimensions. However, we cannot guarantee that your device's display accurately reflects the true colour or texture of our handcrafted products. Slight natural variations in handwoven cashmere are a hallmark of authentic artisan craftsmanship and are not considered defects.</p>
+                        <p>Custom monogramming orders are final sale and non-refundable once production has commenced.</p>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">04</span> Orders & Payment
+                        </h2>
+                        <p>By placing an order, you make an offer to purchase the selected product(s) at the stated price. We reserve the right to accept or decline any order. An order confirmation email constitutes our acceptance of your order.</p>
+                        <p>We accept payment by major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and Shop Pay. All transactions are encrypted using SSL/TLS technology. We do not store full payment card numbers on our servers.</p>
+                        <p>For wholesale and corporate gifting orders, a <strong class="font-semibold text-brand-primary">50% deposit</strong> is required upon confirmation, with the remaining balance due prior to shipment.</p>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">05</span> Shipping Policy
+                        </h2>
+                        <p>We offer <strong class="font-semibold text-brand-primary">free standard shipping</strong> on all orders to addresses within <strong class="font-semibold text-brand-primary">Canada and the United States</strong>. For international orders, shipping rates and estimated delivery times will be calculated at checkout.</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Canada:</strong> 3–7 business days via Canada Post or equivalent carrier.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">United States:</strong> 5–10 business days.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">International:</strong> 10–21 business days. Duties, taxes, and customs fees are the responsibility of the recipient.</span></li>
+                        </ul>
+                        <p>We ship from Brampton, Ontario, Canada. Orders are processed within 2–3 business days. A tracking number will be provided by email once your order has been dispatched.</p>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">06</span> Returns & Exchanges
+                        </h2>
+                        <p>We want you to love your Himalayan Cashmere World purchase. If you are not completely satisfied, we offer the following:</p>
+                        <ul class="space-y-2 pl-4">
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Return Window:</strong> 30 days from the date of delivery.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Condition:</strong> Items must be unworn, unwashed, and in their original packaging with all tags attached.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Free Returns:</strong> Return shipping is free for Canadian and US orders.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Refunds:</strong> Issued to the original payment method within 5–10 business days of receiving the returned item.</span></li>
+                            <li class="flex gap-3"><span class="text-brand-accent mt-1 shrink-0">—</span><span><strong class="font-semibold text-brand-primary">Non-Returnable:</strong> Custom-monogrammed items, sale/final-clearance items, and gift cards are not eligible for return.</span></li>
+                        </ul>
+                        <p>To initiate a return or exchange, please contact us at <a href="mailto:cashmereworld2@gmail.com" class="text-brand-accent underline">cashmereworld2@gmail.com</a> with your order number and reason for return.</p>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">07</span> Intellectual Property
+                        </h2>
+                        <p>All content on this website — including but not limited to text, photographs, product imagery, logos, brand names, graphics, and code — is the exclusive property of Himalayan Cashmere World Inc. or its content suppliers and is protected by Canadian and international copyright, trademark, and intellectual property laws.</p>
+                        <p>You may not reproduce, republish, distribute, transmit, display, or create derivative works from any content on this website without our prior written consent.</p>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">08</span> Disclaimer of Warranties
+                        </h2>
+                        <p>This website and its contents are provided on an "as is" and "as available" basis. To the fullest extent permitted by applicable law, we disclaim all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the website will be uninterrupted, error-free, or free from viruses or other harmful components.</p>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">09</span> Limitation of Liability
+                        </h2>
+                        <p>To the maximum extent permitted by law, Himalayan Cashmere World Inc. and its directors, employees, and suppliers shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of, or inability to use, this website or our products — even if we have been advised of the possibility of such damages.</p>
+                        <p>Our total aggregate liability to you in connection with any claim arising under these Terms shall not exceed the total amount you paid for the specific order giving rise to the claim.</p>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">10</span> Governing Law & Dispute Resolution
+                        </h2>
+                        <p>These Terms &amp; Conditions are governed by and construed in accordance with the laws of the <strong class="font-semibold text-brand-primary">Province of Ontario and the federal laws of Canada</strong>, without regard to conflict-of-law principles.</p>
+                        <p>Any dispute arising out of or in connection with these Terms shall first be attempted to be resolved through good-faith negotiation. If unresolved within 30 days, disputes shall be submitted to binding arbitration in Brampton, Ontario, Canada, or to the courts of Ontario as a last resort.</p>
+                    </div>
+
+                    <!-- 11 -->
+                    <div class="space-y-3">
+                        <h2 class="font-serif text-xl text-brand-primary font-bold flex items-center gap-3">
+                            <span class="text-brand-accent font-sans text-sm">11</span> Changes to These Terms
+                        </h2>
+                        <p>We reserve the right to modify these Terms &amp; Conditions at any time. Changes will be posted on this page with an updated "Last Updated" date. Your continued use of our website following the posting of any changes constitutes your acceptance of those changes. We recommend reviewing these Terms periodically.</p>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="bg-brand-primary text-brand-secondary p-8 rounded-sm space-y-3">
+                        <h2 class="font-serif text-xl font-light">Questions About These Terms?</h2>
+                        <p class="text-brand-secondary/75 text-xs leading-relaxed">For any questions or concerns regarding these Terms &amp; Conditions, please contact us:</p>
+                        <div class="text-xs text-brand-secondary/80 space-y-1 pt-2">
+                            <p class="font-semibold text-brand-secondary">Himalayan Cashmere World Inc.</p>
+                            <p>18 Governor Grove Crescent, Brampton, ON L6Y 1A6</p>
+                            <p>Email: <a href="mailto:cashmereworld2@gmail.com" class="text-brand-accent underline">cashmereworld2@gmail.com</a></p>
+                            <p>Phone: <a href="tel:+14372174757" class="text-brand-accent underline">437-217-4757</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Slide-Out Shopping Cart Drawer -->
+    <div id="cart-drawer" class="fixed inset-y-0 right-0 w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-500 ease-in-out">
+        <div class="p-8 h-full flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center border-b border-brand-primary/10 pb-6 mb-8">
+                    <span class="font-serif tracking-widest text-brand-primary uppercase text-sm font-bold">Your Selection</span>
+                    <button onclick="toggleCartDrawer()" class="text-brand-primary" aria-label="Close Cart">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <div id="cart-items-container" class="space-y-6 max-h-[50vh] overflow-y-auto pr-2"></div>
+            </div>
+
+            <div class="border-t border-brand-primary/10 pt-6 space-y-4">
+                <div class="flex justify-between text-xs tracking-wider text-brand-primary uppercase font-bold">
+                    <span>Est. Subtotal</span>
+                    <span id="cart-subtotal" class="font-bold">$0.00 CAD</span>
+                </div>
+                <div class="bg-brand-bg p-4 rounded-sm text-[10px] text-brand-primary/80 flex items-center justify-between">
+                    <span>🇨🇦 Free Canadian & US Shipping Included</span>
+                    <span class="font-bold">Active</span>
+                </div>
+                <button onclick="triggerCheckout()" class="w-full bg-brand-primary text-brand-secondary hover:bg-brand-dark hover:text-white py-4 text-xs tracking-[0.25em] uppercase font-bold transition-all rounded-sm shadow-md">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Cart Drawer Overlay -->
+    <div id="cart-overlay" onclick="toggleCartDrawer()" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 hidden"></div>
+
+
+    <!-- DYNAMIC CHECKOUT MODAL -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-primary/70 backdrop-blur-md hidden">
+        <div class="bg-white w-full max-w-lg p-8 md:p-12 shadow-2xl rounded-sm max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center border-b border-brand-primary/10 pb-6 mb-6">
+                <span class="font-serif tracking-widest text-brand-primary uppercase text-sm font-bold">Secure Checkout</span>
+                <button onclick="closeCheckout()" class="text-brand-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div id="checkout-form-area" class="space-y-6">
+                <div>
+                    <h3 class="text-xs tracking-wider uppercase text-brand-primary font-bold mb-4">1. Delivery Address</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
+                        <input type="text" placeholder="Last Name" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
+                    </div>
+                    <input type="text" placeholder="Address Route & Street" required class="w-full mt-3 bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
+                    <div class="grid grid-cols-2 gap-4 mt-3">
+                        <input type="text" placeholder="Postal Code" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
+                        <input type="text" placeholder="City" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
+                    </div>
+                </div>
+
+                <div class="border-t border-brand-primary/10 pt-6">
+                    <h3 class="text-xs tracking-wider uppercase text-brand-primary font-bold mb-4">2. Secure Payment Card</h3>
+                    <input type="text" placeholder="Cardholder Full Name" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
+                    <input type="text" placeholder="Card Number (XXXX-XXXX-XXXX-XXXX)" required class="w-full mt-3 bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
+                    <div class="grid grid-cols-2 gap-4 mt-3">
+                        <input type="text" placeholder="Expiration (MM/YY)" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
+                        <input type="text" placeholder="CVV" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
+                    </div>
+                </div>
+
+                <div class="border-t border-brand-primary/10 pt-6 flex justify-between items-center">
+                    <div class="text-xs">
+                        <span class="block text-brand-primary/60 font-bold">Order Total:</span>
+                        <span id="checkout-total-val" class="text-lg font-serif font-bold text-brand-primary">$0.00 CAD</span>
+                    </div>
+                    <button onclick="processFinalPayment()" class="bg-brand-primary text-brand-secondary hover:bg-brand-dark hover:text-white px-6 py-3 text-xs tracking-[0.2em] uppercase font-bold transition-all rounded-sm">
+                        Submit Order Payment
+                    </button>
+                </div>
+            </div>
+            <!-- Success Message State -->
+            <div id="checkout-success" class="hidden text-center py-12 space-y-6">
+                <div class="w-16 h-16 bg-brand-primary/10 text-brand-primary rounded-full flex items-center justify-center mx-auto">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h3 class="font-serif text-3xl text-brand-primary font-bold">Order Received</h3>
+                <p class="text-xs text-brand-text/80 leading-relaxed font-light">Your order payment was verified securely. A confirmation email and traceable carrier shipping notification are on their way to your destination inbox.</p>
+                <button onclick="closeCheckout(); navigateTo('home')" class="bg-brand-primary text-brand-secondary hover:bg-brand-dark hover:text-white px-8 py-3 text-xs tracking-widest uppercase transition-all rounded-sm font-bold">
+                    Continue Exploring
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scroll-to-top"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            aria-label="Scroll to top"
+            class="fixed bottom-8 right-8 z-40 w-11 h-11 bg-brand-primary text-brand-secondary flex items-center justify-center shadow-lg rounded-sm opacity-0 translate-y-4 pointer-events-none transition-all duration-300 hover:bg-brand-accent group">
+        <svg class="w-4 h-4 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <!-- PRODUCT QUICK-VIEW POPUP MODAL -->
+    <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden" role="dialog" aria-modal="true">
+        <!-- Overlay -->
+        <div onclick="closeProductModal()" class="absolute inset-0 bg-brand-primary/60 backdrop-blur-sm"></div>
+
+        <!-- Modal Panel -->
+        <div class="relative bg-white w-full max-w-4xl max-h-[92vh] overflow-y-auto shadow-2xl rounded-sm transform transition-all duration-300 scale-95 opacity-0" id="product-modal-panel">
+
+            <!-- Close Button -->
+            <button onclick="closeProductModal()" aria-label="Close"
+                    class="absolute top-4 right-4 z-10 w-9 h-9 flex items-center justify-center bg-brand-bg hover:bg-brand-secondary text-brand-primary rounded-full transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+
+                <!-- LEFT: Images -->
+                <div class="bg-brand-linenLight p-6 flex flex-col gap-4">
+                    <!-- Main image -->
+                    <div class="aspect-[4/5] overflow-hidden bg-neutral-100 rounded-sm">
+                        <img id="modal-zoom-img" src="" alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="grid grid-cols-2 gap-3" id="modal-thumbs"></div>
+                </div>
+
+                <!-- RIGHT: Product Details -->
+                <div class="p-8 flex flex-col justify-between space-y-6">
+                    <div class="space-y-5">
+
+                        <!-- Badge + Title -->
+                        <div>
+                            <span class="text-[9px] tracking-[0.3em] uppercase text-brand-accent font-bold block mb-2">Authentic Chyangra Pashmina</span>
+                            <h2 id="modal-title" class="font-serif text-2xl md:text-3xl text-brand-primary font-light leading-tight"></h2>
+                            <p id="modal-tagline" class="text-brand-primary/50 text-xs tracking-wide italic mt-1"></p>
+                        </div>
+
+                        <!-- Price -->
+                        <p id="modal-price" class="font-serif text-2xl text-brand-primary font-bold"></p>
+
+                        <!-- Description -->
+                        <p id="modal-desc" class="text-sm text-brand-text/80 font-light leading-relaxed border-t border-brand-primary/8 pt-4"></p>
+
+                        <!-- Colour Swatches -->
+                        <div>
+                            <span class="block text-[10px] tracking-widest uppercase text-brand-primary/60 mb-2 font-bold">Select Shade</span>
+                            <div class="flex flex-wrap gap-2" id="modal-swatches"></div>
+                        </div>
+
+                        <!-- Monogram -->
+                        <div>
+                            <span class="block text-[10px] tracking-widest uppercase text-brand-primary/60 mb-2 font-bold">Custom Monogramming (Optional)</span>
+                            <input type="text" id="modal-monogram" placeholder="Up to 3 initials (e.g. A.B.)" maxlength="5"
+                                   class="w-full max-w-xs bg-brand-bg border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent rounded-sm">
+                            <p class="text-[9px] text-brand-primary/40 mt-1" id="modal-monogram-label"></p>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="space-y-3 pt-2 border-t border-brand-primary/8">
+                        <button id="modal-add-btn" onclick=""
+                                class="w-full bg-brand-primary text-brand-secondary hover:bg-brand-dark py-4 text-xs tracking-[0.2em] uppercase font-bold transition-all rounded-sm shadow-md">
+                            Add to Selection
+                        </button>
+                        <button id="modal-detail-btn" onclick=""
+                                class="w-full border border-brand-primary/20 text-brand-primary hover:border-brand-primary py-3 text-xs tracking-[0.2em] uppercase font-medium transition-all rounded-sm">
+                            View Full Details →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PRODUCT MODAL OVERLAY END -->
+
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container" class="fixed bottom-6 right-6 z-50 pointer-events-none flex flex-col gap-3 max-w-sm w-full"></div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-primary text-brand-secondary pt-24 pb-12 px-6 lg:px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+            <div class="space-y-6">
+                <button onclick="navigateTo('home')" class="focus:outline-none flex items-center mb-2">
+                    <img src="images/logo-nhpc-final.png" alt="Himalayan Cashmere World" class="h-10 w-auto object-contain brightness-0 invert" onerror="this.onerror=null; this.outerHTML='<span class=\'font-serif tracking-[0.2em] uppercase text-lg text-brand-secondary block font-bold\'>Himalayan Cashmere World</span>';">
+                </button>
+                <p class="text-xs text-brand-secondary/75 leading-relaxed font-light max-w-sm">
+                    Handcrafting fine-grade Chyangra cashmere stoles, shawls, and knitwear since 2009. Ethically made in Nepal · Shipped from Brampton, Canada.
+                </p>
+                <div class="flex items-center space-x-3 text-brand-accent/80 font-serif text-xs">
+                    <span>✓ Certified Cashmere</span>
+                    <span>•</span>
+                    <span>✓ Fair Trade Nepal</span>
+                </div>
+                <!-- Social links -->
+                <div class="flex items-center space-x-4 pt-1">
+                    <a href="https://www.facebook.com/profile.php?id=61578139123355" target="_blank" rel="noopener" aria-label="Facebook" class="text-brand-secondary/60 hover:text-brand-accent transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/cashmere_2009/" target="_blank" rel="noopener" aria-label="Instagram" class="text-brand-secondary/60 hover:text-brand-accent transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@cashmere_2009" target="_blank" rel="noopener" aria-label="TikTok" class="text-brand-secondary/60 hover:text-brand-accent transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.29 6.29 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.52V6.76a4.85 4.85 0 01-1.02-.07z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xs tracking-[0.2em] uppercase font-bold text-brand-accent mb-6">Collections</h3>
+                <ul class="space-y-3 text-xs text-brand-secondary/75 font-light">
+                    <li><button onclick="navigateTo('shop')" class="hover:text-brand-accent">Pashmina Shawls & Stoles</button></li>
+                    <li><button onclick="navigateTo('shop')" class="hover:text-brand-accent">Luxury Blankets</button></li>
+                    <li><button onclick="navigateTo('shop')" class="hover:text-brand-accent">Knitwear & Sweaters</button></li>
+                    <li><button onclick="navigateTo('shop')" class="hover:text-brand-accent">Ponchos</button></li>
+                    <li><button onclick="navigateTo('shop')" class="hover:text-brand-accent">Warmers (Gloves, Hats, Socks)</button></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xs tracking-[0.2em] uppercase font-bold text-brand-accent mb-6">Concierge</h3>
+                <ul class="space-y-3 text-xs text-brand-secondary/75 font-light">
+                    <li><button onclick="navigateTo('care')" class="hover:text-brand-accent">Care & Repair Guide</button></li>
+                    <li><button onclick="navigateTo('faq')" class="hover:text-brand-accent">Frequently Asked Questions</button></li>
+                    <li><button onclick="navigateTo('contact')" class="hover:text-brand-accent">Corporate Custom Monograms</button></li>
+                    <li><button onclick="navigateTo('contact')" class="hover:text-brand-accent">Canadian Showroom Access</button></li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h3 class="text-xs tracking-[0.2em] uppercase font-bold text-brand-accent">The Newsletter</h3>
+                <p class="text-xs text-brand-secondary/75 font-light leading-relaxed">Be the first to hear about new arrivals, restocks, and exclusive offers from our Kathmandu workshop.</p>
+                <div class="flex border-b border-brand-secondary/20 pb-2">
+                    <input type="email" id="newsletter-email" placeholder="Enter your email" class="bg-transparent text-xs w-full text-brand-secondary placeholder-brand-secondary/40 focus:outline-none">
+                    <button onclick="handleNewsletterSubmit()" class="text-xs tracking-widest text-brand-accent uppercase font-bold pl-2">Join</button>
+                </div>
+                <div class="space-y-1 text-[10px] text-brand-secondary/60">
+                    <p>📞 <a href="tel:+14372174757" class="hover:text-brand-accent">437-217-4757</a></p>
+                    <p>✉️ <a href="mailto:cashmereworld2@gmail.com" class="hover:text-brand-accent">cashmereworld2@gmail.com</a></p>
+                    <p>📍 18 Governor Grove Crescent, Brampton, ON</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-brand-secondary/60 uppercase tracking-widest">
+            <p>© 2026 Himalayan Cashmere World Inc. All Rights Reserved.</p>
+            <div class="flex space-x-6">
+                <button onclick="navigateTo('privacy')" class="hover:text-white">Privacy Policy</button>
+                <button onclick="navigateTo('terms')" class="hover:text-white">Terms of Use</button>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Pure JavaScript Dynamic Application Logic -->
+    <script>
+        const productCatalog = [
+            {
+                id: '1',
+                title: 'Heritage Woven Clutch',
+                tagline: 'Hand-loomed cashmere — refined everyday elegance',
+                category: 'accessories',
+                priceCAD: 98.00,
+                priceUSD: 73.00,
+                colorName: 'Natural Tan',
+                colors: ['Natural Tan', 'Ivory', 'Charcoal'],
+                images: [
+                    'images/product-clutch.jpg'
+                ],
+                description: 'A refined everyday clutch woven from pure Chyangra cashmere on traditional Kathmandu handlooms. The tightly woven construction creates a structured silhouette that holds its shape beautifully. A versatile companion — from morning meetings to evening gatherings.'
+            },
+            {
+                id: '2',
+                title: 'Artisan Tassel Evening Wrap',
+                tagline: 'Exquisite tassel finish — effortless evening glamour',
+                category: 'accessories',
+                priceCAD: 125.00,
+                priceUSD: 93.00,
+                colorName: 'Midnight Black',
+                colors: ['Midnight Black', 'Deep Burgundy', 'Champagne'],
+                images: [
+                    'images/product-tassel-wrap.jpg'
+                ],
+                description: 'Draped in pure cashmere with hand-tied tassel details at each end, this evening wrap transforms any outfit with effortless mountain-inspired glamour. Lightweight yet sumptuously warm — ideal for cool evenings wherever your journey takes you.'
+            },
+            {
+                id: '3',
+                title: 'Kathmandu Silk Blend Stole',
+                tagline: 'Pure cashmere & silk — luminous artisan weave',
+                category: 'wraps',
+                priceCAD: 165.00,
+                priceUSD: 123.00,
+                colorName: 'Soft Blush',
+                colors: ['Soft Blush', 'Pearl White', 'Sage'],
+                images: [
+                    'images/product-silk-stole.jpg'
+                ],
+                description: 'A harmonious blend of Chyangra cashmere and fine mulberry silk, creating an extraordinary fabric with an ethereal luminosity. Woven on 18th-century-style looms in Kathmandu, each stole exhibits a subtle sheen unique to the silk-cashmere union.'
+            },
+            {
+                id: '4',
+                title: 'Heritage Dyed Pashmina Scarf',
+                tagline: 'Artisan plant-dyed — timeless Himalayan heritage',
+                category: 'wraps',
+                priceCAD: 198.00,
+                priceUSD: 148.00,
+                colorName: 'Terra Cotta',
+                colors: ['Terra Cotta', 'Indigo', 'Saffron'],
+                images: [
+                    'images/product-pashmina-scarf.jpg'
+                ],
+                description: 'Coloured using traditional plant-based dyes passed down through generations of Nepalese dye masters, this scarf carries a depth of tone impossible to achieve with synthetic pigments. Each piece is unique — minor variations in tone are a mark of authentic handcraft.'
+            },
+            {
+                id: '5',
+                title: 'Everest Heritage Cashmere Shawl',
+                tagline: 'Pure grade-A cashmere — heirloom-worthy warmth',
+                category: 'wraps',
+                priceCAD: 289.00,
+                priceUSD: 215.00,
+                colorName: 'Storm Grey',
+                colors: ['Storm Grey', 'Natural Ecru', 'Cobalt Blue'],
+                images: [
+                    'images/product-cashmere-shawl.jpg'
+                ],
+                description: 'Named for the world\'s highest peak, this shawl is woven from the finest grade-A Chyangra cashmere fibre — collected at altitudes above 4,000 metres where cold climates produce the softest, most insulating fleece. A classic investment piece built to last a lifetime.'
+            },
+            {
+                id: '6',
+                title: 'Royal Chyangra Wrap',
+                tagline: 'Ultra-fine 2-ply weave — the pinnacle of luxury',
+                category: 'wraps',
+                priceCAD: 349.00,
+                priceUSD: 260.00,
+                colorName: 'Royal Camel',
+                colors: ['Royal Camel', 'Ivory', 'Charcoal'],
+                images: [
+                    'images/product-chyangra-wrap.jpg'
+                ],
+                description: 'Our most prestigious wrap, crafted from 2-ply Chyangra cashmere of exceptional fineness — measuring under 14 microns in diameter. An extraordinary level of softness that must be felt to be believed. The considered weight provides warmth without bulk, season after season.'
+            },
+            {
+                id: '7',
+                title: 'Nepal Artisan Knit Pullover',
+                tagline: 'Hand-knitted in Kathmandu — classic relaxed luxury',
+                category: 'apparel',
+                priceCAD: 395.00,
+                priceUSD: 295.00,
+                colorName: 'Oatmeal',
+                colors: ['Oatmeal', 'Charcoal', 'Navy'],
+                images: [
+                    'images/product-knit-pullover.jpg'
+                ],
+                description: 'Hand-knitted by skilled artisans in Kathmandu\'s traditional workshops, this pullover embodies the philosophy of slow fashion at its finest. The relaxed silhouette flatters every body, while the pure cashmere construction ensures warmth without weight. A wardrobe cornerstone.'
+            },
+            {
+                id: '8',
+                title: 'Alpine Ribbed Cashmere Sweater',
+                tagline: 'Fine rib construction — sculpted mountain elegance',
+                category: 'apparel',
+                priceCAD: 425.00,
+                priceUSD: 318.00,
+                colorName: 'Slate Blue',
+                colors: ['Slate Blue', 'Cream', 'Forest Green'],
+                images: [
+                    'images/product-ribbed-sweater.jpg'
+                ],
+                description: 'The fine rib construction of this sweater creates a naturally structured silhouette that skims the body elegantly. Crafted from pure cashmere with a subtle lustre, it transitions seamlessly from elevated casual to smart occasions. A refined staple for the discerning wardrobe.'
+            },
+            {
+                id: '9',
+                title: 'Himalayan Layered Poncho',
+                tagline: 'Generous drape — effortless layering luxury',
+                category: 'apparel',
+                priceCAD: 445.00,
+                priceUSD: 332.00,
+                colorName: 'Warm Caramel',
+                colors: ['Warm Caramel', 'Ivory', 'Dusty Rose'],
+                images: [
+                    'images/product-pashmina-scarf.jpg'
+                ],
+                description: 'Inspired by the sweeping landscapes of the Himalayas, this poncho falls in generous, fluid layers of pure cashmere. The oversized silhouette creates beautiful movement as you walk, while the exceptional warmth makes it ideal for cool Canadian evenings and mountain escapes alike.'
+            },
+            {
+                id: '10',
+                title: 'Annapurna Hooded Cashmere Poncho',
+                tagline: 'Cashmere hood — ultimate cozy sophistication',
+                category: 'apparel',
+                priceCAD: 475.00,
+                priceUSD: 355.00,
+                colorName: 'Deep Espresso',
+                colors: ['Deep Espresso', 'Storm Grey', 'Midnight Navy'],
+                images: [
+                    'images/product-hooded-poncho.jpg'
+                ],
+                description: 'Named for the sacred Annapurna massif, this hooded poncho represents the apex of cashmere outerwear. The integrated hood — a rarity in fine cashmere — is designed to envelop you in warmth without sacrificing the clean, elegant lines of the silhouette. Pure luxury redefined.'
+            }
+        ];
+
+        let currentCurrency = 'CAD';
+        let currentCart = [];
+        let currentFilter = 'all';
+        let currentSort = 'default';
+
+        // Toast Notification
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            if (!container) return;
+
+            const toast = document.createElement('div');
+            toast.className = `p-4 bg-brand-primary text-brand-secondary text-xs rounded-sm shadow-xl border-l-4 border-brand-accent pointer-events-auto transition-all duration-300 transform translate-y-2 opacity-0 flex items-center justify-between gap-4`;
+            toast.innerHTML = `
+                <span>${message}</span>
+                <button onclick="this.parentElement.remove()" class="text-brand-accent hover:text-white font-bold text-[10px] uppercase">Dismiss</button>
+            `;
+
+            container.appendChild(toast);
+            setTimeout(() => toast.classList.remove('translate-y-2', 'opacity-0'), 10);
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-2');
+                setTimeout(() => toast.remove(), 300);
+            }, 4000);
+        }
+
+        // Navigation Router
+        function navigateTo(viewId) {
+            window.scrollTo({ top: 0, behavior: 'instant' });
+
+            const views = ['home', 'shop', 'product', 'story', 'sustainability', 'care', 'contact', 'faq', 'privacy', 'terms'];
+            views.forEach(v => {
+                const element = document.getElementById(`view-${v}`);
+                if (element) {
+                    if (v === viewId) {
+                        element.classList.remove('hidden');
+                        element.classList.add('block');
+                        setTimeout(() => element.classList.remove('opacity-0', 'translate-y-4'), 50);
+                    } else {
+                        element.classList.add('hidden');
+                        element.classList.remove('block');
+                    }
+                }
+            });
+        }
+
+        function changeCurrency(currency) {
+            currentCurrency = currency;
+            const cadBtn = document.getElementById('curr-cad');
+            const usdBtn = document.getElementById('curr-usd');
+            if (currency === 'CAD') {
+                cadBtn.classList.add('font-bold', 'opacity-100');
+                cadBtn.classList.remove('opacity-60');
+                usdBtn.classList.remove('font-bold', 'opacity-100');
+                usdBtn.classList.add('opacity-60');
+            } else {
+                usdBtn.classList.add('font-bold', 'opacity-100');
+                usdBtn.classList.remove('opacity-60');
+                cadBtn.classList.remove('font-bold', 'opacity-100');
+                cadBtn.classList.add('opacity-60');
+            }
+            renderBestSellers();
+            renderShopCatalog();
+            updateCartDrawerUI();
+            showToast(`Currency updated to ${currency}`);
+        }
+
+        function renderBestSellers() {
+            const container = document.getElementById('homepage-featured');
+            if (!container) return;
+            container.innerHTML = '';
+
+            productCatalog.slice(0, 4).forEach(prod => {
+                const priceStr = currentCurrency === 'CAD' ? `$${prod.priceCAD.toFixed(2)} CAD` : `$${prod.priceUSD.toFixed(2)} USD`;
+                container.innerHTML += `
+                    <div class="group cursor-pointer" onclick="openProductModal('${prod.id}')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="${prod.images[0]}" alt="${prod.title}" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Ethically Sourced</span>
+                            <!-- Quick View hover badge -->
+                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">
+                                    Quick View
+                                </span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">${prod.title}</h3>
+                            <p class="text-xs text-brand-primary/50 italic">${prod.tagline}</p>
+                            <p class="text-xs font-bold text-brand-primary pt-1">${priceStr}</p>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        // ─── Product Quick-View Modal ───
+        function openProductModal(productId) {
+            const prod = productCatalog.find(p => p.id === productId);
+            if (!prod) return;
+
+            const priceStr = currentCurrency === 'CAD' ? `$${prod.priceCAD.toFixed(2)} CAD` : `$${prod.priceUSD.toFixed(2)} USD`;
+
+            // Populate fields
+            document.getElementById('modal-zoom-img').src = prod.images[0];
+            document.getElementById('modal-zoom-img').alt = prod.title;
+            document.getElementById('modal-title').textContent = prod.title;
+            document.getElementById('modal-tagline').textContent = prod.tagline;
+            document.getElementById('modal-price').textContent = priceStr;
+            document.getElementById('modal-desc').textContent = prod.description;
+            document.getElementById('modal-monogram-label').textContent = `Hand-embroidered with Himalayan Gold thread (+$25.00 ${currentCurrency})`;
+            document.getElementById('modal-monogram').value = '';
+
+            // Thumbnails
+            const thumbsContainer = document.getElementById('modal-thumbs');
+            thumbsContainer.innerHTML = prod.images.map((img, i) => `
+                <button onclick="document.getElementById('modal-zoom-img').src='${img}'"
+                        class="aspect-[4/3] bg-neutral-100 overflow-hidden rounded-sm border-2 ${i === 0 ? 'border-brand-primary' : 'border-transparent hover:border-brand-primary/30'} transition-all">
+                    <img src="${img}" alt="${prod.title}" class="w-full h-full object-cover">
+                </button>
+            `).join('');
+
+            // Colour swatches
+            const swatchContainer = document.getElementById('modal-swatches');
+            swatchContainer.innerHTML = prod.colors.map((col, i) => `
+                <button onclick="selectModalSwatch(this)"
+                        class="modal-swatch px-3 py-1.5 text-[9px] font-bold tracking-widest uppercase border rounded-sm transition-all ${i === 0 ? 'border-brand-primary bg-brand-primary text-brand-secondary' : 'border-brand-primary/20 text-brand-primary hover:border-brand-primary'}">
+                    ${col}
+                </button>
+            `).join('');
+
+            // Wire up buttons with correct product id
+            document.getElementById('modal-add-btn').onclick = () => addToCartFromModal(prod.id);
+            document.getElementById('modal-detail-btn').onclick = () => {
+                closeProductModal();
+                openProductPage(prod.id);
+            };
+
+            // Show modal + animate in
+            const modal = document.getElementById('product-modal');
+            const panel = document.getElementById('product-modal-panel');
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            requestAnimationFrame(() => {
+                panel.classList.remove('scale-95', 'opacity-0');
+                panel.classList.add('scale-100', 'opacity-100');
+            });
+        }
+
+        function closeProductModal() {
+            const modal = document.getElementById('product-modal');
+            const panel = document.getElementById('product-modal-panel');
+            panel.classList.remove('scale-100', 'opacity-100');
+            panel.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 250);
+        }
+
+        function selectModalSwatch(btn) {
+            document.querySelectorAll('.modal-swatch').forEach(b => {
+                b.classList.remove('border-brand-primary', 'bg-brand-primary', 'text-brand-secondary');
+                b.classList.add('border-brand-primary/20', 'text-brand-primary');
+            });
+            btn.classList.add('border-brand-primary', 'bg-brand-primary', 'text-brand-secondary');
+            btn.classList.remove('border-brand-primary/20');
+        }
+
+        function addToCartFromModal(productId) {
+            const prod = productCatalog.find(p => p.id === productId);
+            if (!prod) return;
+            const monogramInput = document.getElementById('modal-monogram');
+            const monogramValue = monogramInput ? monogramInput.value.trim().toUpperCase() : '';
+            let price = currentCurrency === 'CAD' ? prod.priceCAD : prod.priceUSD;
+            if (monogramValue) price += 25.00;
+
+            currentCart.push({
+                id: prod.id + '-' + monogramValue + '-' + Date.now(),
+                title: prod.title,
+                price,
+                monogram: monogramValue,
+                image: prod.images[0]
+            });
+
+            updateCartDrawerUI();
+            closeProductModal();
+            setTimeout(() => toggleCartDrawer(), 300);
+            showToast(`${prod.title} added to your selection.`);
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeProductModal();
+        });
+
+        // Scroll to Top — show after scrolling 300px
+        const scrollBtn = document.getElementById('scroll-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                scrollBtn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            } else {
+                scrollBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                scrollBtn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            }
+        });
+
+        // Render shop — filter and sort never mutate the original catalog array
+        function renderShopCatalog() {
+            const container = document.getElementById('shop-grid');
+            if (!container) return;
+
+            let items = currentFilter === 'all'
+                ? [...productCatalog]
+                : productCatalog.filter(p => p.category === currentFilter);
+
+            if (currentSort === 'price-low') {
+                items.sort((a, b) => currentCurrency === 'CAD' ? a.priceCAD - b.priceCAD : a.priceUSD - b.priceUSD);
+            } else if (currentSort === 'price-high') {
+                items.sort((a, b) => currentCurrency === 'CAD' ? b.priceCAD - a.priceCAD : b.priceUSD - a.priceUSD);
+            }
+
+            if (items.length === 0) {
+                container.innerHTML = `<p class="text-sm font-light text-brand-primary/50 col-span-full">No products fit your specific filter selection.</p>`;
+                return;
+            }
+
+            container.innerHTML = '';
+            items.forEach(prod => {
+                const priceStr = currentCurrency === 'CAD' ? `$${prod.priceCAD.toFixed(2)} CAD` : `$${prod.priceUSD.toFixed(2)} USD`;
+                container.innerHTML += `
+                    <div class="group cursor-pointer" onclick="openProductPage('${prod.id}')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="${prod.images[0]}" alt="${prod.title}" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary font-bold">${prod.title}</h3>
+                            <p class="text-xs text-brand-primary/50 italic">${prod.tagline}</p>
+                            <p class="text-xs font-bold text-brand-accent pt-1">${priceStr}</p>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function filterProducts(cat) {
+            currentFilter = cat;
+            renderShopCatalog();
+        }
+
+        function sortProducts(criteria) {
+            currentSort = criteria;
+            renderShopCatalog();
+        }
+
+        function openProductPage(productId) {
+            const prod = productCatalog.find(p => p.id === productId);
+            if (!prod) return;
+
+            const priceStr = currentCurrency === 'CAD' ? `$${prod.priceCAD.toFixed(2)} CAD` : `$${prod.priceUSD.toFixed(2)} USD`;
+            const detailContainer = document.getElementById('product-detail-area');
+
+            let swatchesHTML = '';
+            prod.colors.forEach((col, idx) => {
+                const activeBorder = idx === 0 ? 'ring-2 ring-brand-primary' : '';
+                swatchesHTML += `
+                    <button onclick="selectSwatch(this, '${col}')" class="w-6 h-6 rounded-full border border-brand-primary/20 bg-brand-secondary/40 text-[9px] font-bold text-brand-primary hover:scale-105 transition-transform ${activeBorder}" title="${col}">
+                        ${col[0]}
+                    </button>
+                `;
+            });
+
+            detailContainer.innerHTML = `
+                <div class="space-y-6">
+                    <div class="aspect-[4/5] bg-neutral-100 overflow-hidden rounded-sm">
+                        <img src="${prod.images[0]}" id="zoom-img" alt="${prod.title}" class="w-full h-full object-cover hover:scale-[1.05] transition-transform duration-700">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button onclick="changeZoomImg('${prod.images[0]}')" class="aspect-[4/3] bg-neutral-100 overflow-hidden rounded-sm"><img src="${prod.images[0]}" class="w-full h-full object-cover"></button>
+                        <button onclick="changeZoomImg('${prod.images[1]}')" class="aspect-[4/3] bg-neutral-100 overflow-hidden rounded-sm"><img src="${prod.images[1]}" class="w-full h-full object-cover"></button>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-xs tracking-[0.3em] uppercase text-brand-accent font-bold block mb-2">Authentic Chyangra Pashmina</span>
+                        <h1 class="font-serif text-3xl md:text-5xl text-brand-primary font-light leading-tight">${prod.title}</h1>
+                        <p class="text-brand-primary/50 text-xs tracking-wider italic mt-1">${prod.tagline}</p>
+                        <p class="font-serif text-2xl text-brand-primary mt-4 font-bold">${priceStr}</p>
+                    </div>
+
+                    <p class="text-base text-brand-text/80 leading-relaxed font-light">${prod.description}</p>
+
+                    <div class="space-y-4 pt-4 border-t border-brand-primary/10">
+                        <div>
+                            <span class="block text-[10px] tracking-widest uppercase text-brand-primary/70 mb-2 font-bold">Select Shade</span>
+                            <div class="flex space-x-3" id="swatch-group">
+                                ${swatchesHTML}
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="block text-[10px] tracking-widest uppercase text-brand-primary/70 mb-2 font-bold">Custom Monogramming (Optional)</span>
+                            <input type="text" id="custom-monogram" placeholder="Up to 3 initials (e.g. A.B.)" maxlength="5" class="w-full max-w-xs bg-white border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none rounded-sm">
+                            <p class="text-[9px] text-brand-primary/50 mt-1">Hand-embroidered with Himalayan Gold thread (+$25.00 ${currentCurrency})</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-brand-primary/10 pt-4 space-y-4">
+                        <div>
+                            <button onclick="toggleAccordion('det-panel-1')" class="w-full flex justify-between items-center py-2 text-left text-brand-primary font-serif text-lg focus:outline-none">
+                                <span class="font-bold">The Material Heritage</span>
+                                <span class="text-xs font-sans text-brand-accent">+</span>
+                            </button>
+                            <div id="det-panel-1" class="hidden mt-2 text-sm text-brand-text/75 leading-relaxed font-light">
+                                Our raw fiber registers an average thickness of 14.5 microns. Ethically combed during the traditional Himalayan molting season, ensuring zero animals are harmed. We use Azo-free Swiss dyes to preserve organic character.
+                            </div>
+                        </div>
+                        <div class="border-b border-brand-primary/10 pb-4">
+                            <button onclick="toggleAccordion('det-panel-2')" class="w-full flex justify-between items-center py-2 text-left text-brand-primary font-serif text-lg focus:outline-none">
+                                <span class="font-bold">Artisan Hand-Looming</span>
+                                <span class="text-xs font-sans text-brand-accent">+</span>
+                            </button>
+                            <div id="det-panel-2" class="hidden mt-2 text-sm text-brand-text/75 leading-relaxed font-light">
+                                Proudly hand-loomed inside our carbon-offset workshop in Kathmandu Valley, Nepal. The intricate fringing of the edges takes up to 8 hours of patient micro-stitching alone, transforming each piece into a unique signature artwork.
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="addToCart('${prod.id}')" class="w-full bg-brand-primary text-brand-secondary hover:bg-brand-dark hover:text-white py-4 text-xs tracking-[0.2em] uppercase font-bold transition-all rounded-sm shadow-md">
+                        Add to Selection
+                    </button>
+                </div>
+            `;
+
+            navigateTo('product');
+        }
+
+        function selectSwatch(btn, colorName) {
+            const swatchGroup = document.getElementById('swatch-group');
+            const buttons = swatchGroup.querySelectorAll('button');
+            buttons.forEach(b => b.classList.remove('ring-2', 'ring-brand-primary'));
+            btn.classList.add('ring-2', 'ring-brand-primary');
+        }
+
+        function changeZoomImg(imgSrc) {
+            document.getElementById('zoom-img').src = imgSrc;
+        }
+
+        function toggleAccordion(id) {
+            const panel = document.getElementById(id);
+            if (panel.classList.contains('hidden')) {
+                panel.classList.remove('hidden');
+            } else {
+                panel.classList.add('hidden');
+            }
+        }
+
+        function toggleCartDrawer() {
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('cart-overlay');
+            if (drawer.classList.contains('translate-x-full')) {
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('hidden');
+            } else {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('hidden');
+            }
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const overlay = document.getElementById('mobile-overlay');
+            if (menu.classList.contains('-translate-x-full')) {
+                menu.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+            } else {
+                menu.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+            }
+        }
+
+        function addToCart(productId) {
+            const prod = productCatalog.find(p => p.id === productId);
+            if (!prod) return;
+
+            const monogramInput = document.getElementById('custom-monogram');
+            let monogramValue = monogramInput ? monogramInput.value.trim().toUpperCase() : '';
+            let finalPrice = currentCurrency === 'CAD' ? prod.priceCAD : prod.priceUSD;
+
+            if (monogramValue) {
+                finalPrice += 25.00;
+            }
+
+            const cartItem = {
+                id: prod.id + '-' + monogramValue + '-' + Date.now(),
+                title: prod.title,
+                price: finalPrice,
+                monogram: monogramValue,
+                image: prod.images[0]
+            };
+
+            currentCart.push(cartItem);
+            updateCartDrawerUI();
+            toggleCartDrawer();
+            showToast(`${prod.title} added to selection.`);
+        }
+
+        function removeFromCart(itemId) {
+            currentCart = currentCart.filter(item => item.id !== itemId);
+            updateCartDrawerUI();
+            showToast('Item removed from selection.');
+        }
+
+        function updateCartDrawerUI() {
+            const counter = document.getElementById('cart-counter');
+            const container = document.getElementById('cart-items-container');
+            const subtotalText = document.getElementById('cart-subtotal');
+
+            counter.innerText = currentCart.length;
+
+            if (currentCart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-16 text-brand-primary/40">
+                        <p class="font-serif italic text-lg mb-4">Your selection is empty.</p>
+                        <button onclick="toggleCartDrawer(); navigateTo('shop')" class="text-xs tracking-widest uppercase underline text-brand-primary font-bold">Shop All Cashmere</button>
+                    </div>
+                `;
+                subtotalText.innerText = `$0.00 ${currentCurrency}`;
+                return;
+            }
+
+            container.innerHTML = '';
+            let total = 0;
+
+            currentCart.forEach(item => {
+                total += item.price;
+                const monogramLabel = item.monogram ? `<span class="block text-[8px] bg-brand-accent/10 text-brand-accent font-bold py-0.5 px-2 rounded-sm w-max uppercase mt-1">Monogram: ${item.monogram}</span>` : '';
+                container.innerHTML += `
+                    <div class="flex items-center justify-between gap-4 border-b border-brand-primary/5 pb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-20 bg-neutral-100 overflow-hidden flex-shrink-0 rounded-sm">
+                                <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-sm text-brand-primary font-bold">${item.title}</h4>
+                                ${monogramLabel}
+                                <button onclick="removeFromCart('${item.id}')" class="text-[9px] text-red-700 font-bold uppercase tracking-widest mt-1">Remove</button>
+                            </div>
+                        </div>
+                        <span class="text-xs font-bold text-brand-primary">$${item.price.toFixed(2)}</span>
+                    </div>
+                `;
+            });
+
+            subtotalText.innerText = `$${total.toFixed(2)} ${currentCurrency}`;
+        }
+
+        function triggerCheckout() {
+            if (currentCart.length === 0) return;
+            toggleCartDrawer();
+
+            const modal = document.getElementById('checkout-modal');
+            const checkoutTotal = document.getElementById('checkout-total-val');
+
+            let total = 0;
+            currentCart.forEach(i => total += i.price);
+
+            checkoutTotal.innerText = `$${total.toFixed(2)} ${currentCurrency}`;
+
+            document.getElementById('checkout-form-area').classList.remove('hidden');
+            document.getElementById('checkout-success').classList.add('hidden');
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeCheckout() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        function processFinalPayment() {
+            document.getElementById('checkout-form-area').classList.add('hidden');
+            document.getElementById('checkout-success').classList.remove('hidden');
+
+            currentCart = [];
+            updateCartDrawerUI();
+            showToast('Payment successful! Your luxury order has been finalized.', 'success');
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast('Concierge inquiry sent! Our Canadian brand team will contact you shortly.', 'success');
+            e.target.reset();
+        }
+
+        function handleNewsletterSubmit() {
+            const input = document.getElementById('newsletter-email');
+            if (input && input.value.trim()) {
+                showToast('Thank you for joining our exclusive private community.', 'success');
+                input.value = '';
+            } else {
+                showToast('Please enter a valid email address.', 'error');
+            }
+        }
+
+        window.onload = function() {
+            renderBestSellers();
+            renderShopCatalog();
+            updateCartDrawerUI();
+        }
+    </script>
+</body>
+</html>
