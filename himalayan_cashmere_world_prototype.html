@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-CA" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himalayan Cashmere World | Authentic Handcrafted Luxury</title>
-    <meta name="description" content="Sustainably handcrafted in Nepal, refined for modern living. Discover the world's finest authentic Chyangra Pashmina shawls, blankets, and loungewear.">
+
+    <!-- ═══ PRIMARY SEO META TAGS ═══ -->
+    <title>Himalayan Cashmere World | Authentic Chyangra Pashmina Shawls — Canada</title>
+    <meta name="description" content="Shop 100% authentic Chyangra Pashmina shawls, stoles, sweaters & ponchos. Ethically handcrafted in Nepal, shipped free across Canada & USA. Since 2009.">
+    <meta name="keywords" content="cashmere shawl Canada, pashmina stole, Chyangra cashmere, Himalayan cashmere, Nepal cashmere, luxury shawl, handwoven stole, cashmere sweater Canada">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Himalayan Cashmere World">
+    <meta name="geo.region" content="CA-ON">
+    <meta name="geo.placename" content="Brampton, Ontario, Canada">
+    <link rel="canonical" href="https://himalayancashmereworld.com/">
+    <link rel="alternate" hreflang="en-CA" href="https://himalayancashmereworld.com/">
+    <link rel="alternate" hreflang="en-US" href="https://himalayancashmereworld.com/">
+
+    <!-- ═══ FAVICON ═══ -->
+    <link rel="icon" type="image/x-icon" href="images/logo-final.avif">
+    <link rel="apple-touch-icon" href="images/logo-final.avif">
+
+    <!-- ═══ OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ═══ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Himalayan Cashmere World">
+    <meta property="og:title" content="Himalayan Cashmere World | Authentic Chyangra Pashmina — Canada">
+    <meta property="og:description" content="Shop 100% authentic Chyangra Pashmina shawls, stoles & sweaters. Ethically handcrafted in Nepal. Free shipping across Canada & USA. Since 2009.">
+    <meta property="og:url" content="https://himalayancashmereworld.com/">
+    <meta property="og:image" content="https://himalayancashmereworld.com/images/banner.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Himalayan Cashmere World — Authentic Pashmina Shawls and Stoles from Nepal">
+    <meta property="og:locale" content="en_CA">
+
+    <!-- ═══ TWITTER / X CARD ═══ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cashmere_2009">
+    <meta name="twitter:title" content="Himalayan Cashmere World | Authentic Chyangra Pashmina — Canada">
+    <meta name="twitter:description" content="Shop 100% authentic Chyangra Pashmina shawls, stoles & sweaters. Ethically handcrafted in Nepal. Free shipping across Canada & USA.">
+    <meta name="twitter:image" content="https://himalayancashmereworld.com/images/banner.png">
+    <meta name="twitter:image:alt" content="Himalayan Cashmere World luxury pashmina collection">
+
+    <!-- ═══ HERO IMAGE PRELOAD (improves LCP / Core Web Vitals) ═══ -->
+    <link rel="preload" as="image" href="images/banner.png" fetchpriority="high">
 
     <!-- Tailwind CSS for utility styles and high performance -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,48 +69,118 @@
         }
     </script>
 
-    <!-- Google Fonts: Cormorant Garamond (Luxury Serif) & Inter (Minimalist Sans) -->
+    <!-- Google Fonts: async non-blocking load to avoid render delay -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Store",
-      "name": "Himalayan Cashmere World",
-      "image": "images/logo-final.avif",
-      "@id": "https://himalayancashmereworld.com",
-      "url": "https://himalayancashmereworld.com",
-      "telephone": "+14372174757",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "18 Governor Grove Crescent",
-        "addressLocality": "Brampton",
-        "addressRegion": "ON",
-        "postalCode": "L6Y 1A6",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 43.6835,
-        "longitude": -79.7665
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": ["ClothingStore", "OnlineStore"],
+        "name": "Himalayan Cashmere World",
+        "description": "100% authentic Chyangra Pashmina shawls, stoles, sweaters and ponchos. Ethically handcrafted in Nepal and shipped free across Canada and USA since 2009.",
+        "image": "https://himalayancashmereworld.com/images/logo-final.avif",
+        "@id": "https://himalayancashmereworld.com",
+        "url": "https://himalayancashmereworld.com",
+        "telephone": "+14372174757",
+        "email": "cashmereworld2@gmail.com",
+        "priceRange": "$$$",
+        "currenciesAccepted": "CAD, USD",
+        "paymentAccepted": "Credit Card, Debit Card, PayPal",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "18 Governor Grove Crescent",
+          "addressLocality": "Brampton",
+          "addressRegion": "ON",
+          "postalCode": "L6Y 1A6",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.6835,
+          "longitude": -79.7665
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Himalayan Cashmere Collection",
+          "itemListElement": [
+            {"@type": "OfferCatalog", "name": "Pashmina Shawls & Stoles"},
+            {"@type": "OfferCatalog", "name": "Cashmere Sweaters & Knitwear"},
+            {"@type": "OfferCatalog", "name": "Cashmere Ponchos"},
+            {"@type": "OfferCatalog", "name": "Cashmere Accessories"}
+          ]
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61578139123355",
+          "https://www.instagram.com/cashmere_2009/",
+          "https://www.tiktok.com/@cashmere_2009"
         ],
-        "opens": "09:00",
-        "closes": "21:00"
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "47",
+          "bestRating": "5"
+        }
       },
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61578139123355",
-        "https://www.instagram.com/cashmere_2009/",
-        "https://www.tiktok.com/@cashmere_2009"
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "100% Cashmere Jali Stole",
+        "description": "Hand-loomed on traditional wooden looms in Kathmandu using 100% pure Chyangra cashmere. The open Jali weave creates a beautifully delicate lattice pattern with hand-cut fringe finish.",
+        "image": "https://himalayancashmereworld.com/images/product-6022.png",
+        "brand": {"@type": "Brand", "name": "Himalayan Cashmere World"},
+        "material": "100% Chyangra Cashmere",
+        "countryOfOrigin": "Nepal",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://himalayancashmereworld.com/",
+          "priceCurrency": "CAD",
+          "price": "395.00",
+          "priceValidUntil": "2027-12-31",
+          "availability": "https://schema.org/InStock",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "CAD"},
+            "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "CA"}
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "47"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://himalayancashmereworld.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Shop", "item": "https://himalayancashmereworld.com/#shop"},
+          {"@type": "ListItem", "position": 3, "name": "Pashmina Shawls & Stoles", "item": "https://himalayancashmereworld.com/#shop"}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Himalayan Cashmere World",
+        "url": "https://himalayancashmereworld.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://himalayancashmereworld.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
     </script>
 
     <!-- Global Custom Styles for Apple/Aesop Premium Aesthetic Finishing -->
@@ -221,9 +328,9 @@
 
                 <!-- RIGHT: Banner image fills the full background -->
                 <img src="images/banner.png"
-                     alt="Himalayan Cashmere World — Authentic Pashmina Shawls and Stoles"
+                     alt="Himalayan Cashmere World — Authentic handwoven Chyangra Pashmina shawls and stoles from Nepal, available in Canada"
                      class="absolute inset-0 w-full h-full object-cover object-center scale-105"
-                     id="hero-img">
+                     id="hero-img" fetchpriority="high" decoding="async">
 
                 <!-- Diagonal overlay: solid deep blue on the left, fading to transparent on the right -->
                 <div class="absolute inset-0"
