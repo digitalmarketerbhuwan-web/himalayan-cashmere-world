@@ -411,25 +411,88 @@
                 </div>
             </section>
 
-            <section class="py-24 bg-brand-bg px-6 lg:px-12 border-t border-brand-primary/5">
-                <div class="max-w-7xl mx-auto text-center mb-12">
-                    <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-2 font-bold">Visual Narrative</span>
-                    <h2 class="font-serif text-3xl md:text-4xl text-brand-primary font-light">As Seen in Himalayan Cashmere World</h2>
-                    <p class="text-xs tracking-[0.15em] uppercase text-brand-primary/60 mt-2 font-semibold">@cashmere_2009</p>
+            <!-- ── Fan-Favourite Originals ── -->
+            <section class="py-24 bg-brand-secondary/20 px-6 lg:px-12 border-t border-brand-primary/5">
+                <div class="max-w-7xl mx-auto mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <div>
+                        <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-2 font-bold">Our Heritage Collection</span>
+                        <h2 class="font-serif text-3xl md:text-5xl text-brand-primary font-light">Fan-Favourite Originals</h2>
+                        <p class="text-brand-primary/60 text-sm font-light mt-3 max-w-lg">The stoles that built our reputation — authentic handwoven Chyangra cashmere pieces loved by our customers since 2009.</p>
+                    </div>
+                    <div>
+                        <button onclick="navigateTo('shop')" class="text-xs tracking-[0.2em] uppercase text-brand-primary font-semibold hover:text-brand-accent transition-colors flex items-center space-x-2">
+                            <span>Shop All</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="aspect-square bg-neutral-200 overflow-hidden group relative">
-                        <img src="images/product-6022.png" alt="100% Cashmere Jali Stole" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+
+                <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+
+                    <!-- Product 1 -->
+                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="images/product-6022.png" alt="100% Cashmere Jali Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Best Seller</span>
+                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">100% Cashmere Jali Stole</h3>
+                            <p class="text-xs text-brand-primary/50 italic">Cut fringe — timeless Himalayan craftsmanship</p>
+                            <p class="text-xs font-bold text-brand-primary pt-1">$395.00 CAD</p>
+                        </div>
                     </div>
-                    <div class="aspect-square bg-neutral-200 overflow-hidden group relative">
-                        <img src="images/product-6649.png" alt="3 Colored checked stole" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+
+                    <!-- Product 2 -->
+                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="images/product-6649.png" alt="3-Colour Checked Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                            <span class="absolute top-4 left-4 bg-brand-accent text-white text-[8px] font-bold tracking-widest uppercase py-1 px-3">Popular</span>
+                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">3-Colour Checked Stole</h3>
+                            <p class="text-xs text-brand-primary/50 italic">Heritage check pattern — a wardrobe icon</p>
+                            <p class="text-xs font-bold text-brand-primary pt-1">$345.00 CAD</p>
+                        </div>
                     </div>
-                    <div class="aspect-square bg-neutral-200 overflow-hidden group relative">
-                        <img src="images/product-6715.png" alt="Multi-colored check stole" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+
+                    <!-- Product 3 -->
+                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="images/product-6715.png" alt="Multi-Colour Check Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Ethically Sourced</span>
+                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">Multi-Colour Check Stole</h3>
+                            <p class="text-xs text-brand-primary/50 italic">Vibrant heritage — artisan dyed</p>
+                            <p class="text-xs font-bold text-brand-primary pt-1">$360.00 CAD</p>
+                        </div>
                     </div>
-                    <div class="aspect-square bg-neutral-200 overflow-hidden group relative">
-                        <img src="images/product-6791.png" alt="Basket weave stole" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+
+                    <!-- Product 4 -->
+                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="images/product-6791.png" alt="Basket Weave Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Handcrafted</span>
+                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">Basket Weave Stole</h3>
+                            <p class="text-xs text-brand-primary/50 italic">Architectural texture — understated luxury</p>
+                            <p class="text-xs font-bold text-brand-primary pt-1">$375.00 CAD</p>
+                        </div>
                     </div>
+
                 </div>
             </section>
         </section>
