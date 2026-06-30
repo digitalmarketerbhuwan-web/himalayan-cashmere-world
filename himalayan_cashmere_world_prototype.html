@@ -1271,7 +1271,7 @@
                     <span class="font-bold">Active</span>
                 </div>
                 <button onclick="triggerCheckout()" class="w-full bg-brand-primary text-brand-secondary hover:bg-brand-dark hover:text-white py-4 text-xs tracking-[0.25em] uppercase font-bold transition-all rounded-sm shadow-md">
-                    Proceed to Checkout
+                    Submit Order Request
                 </button>
             </div>
         </div>
@@ -1281,61 +1281,103 @@
 
 
     <!-- DYNAMIC CHECKOUT MODAL -->
+    <!-- ── ORDER REQUEST MODAL ── -->
     <div id="checkout-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-primary/70 backdrop-blur-md hidden">
-        <div class="bg-white w-full max-w-lg p-8 md:p-12 shadow-2xl rounded-sm max-h-[90vh] overflow-y-auto">
-            <div class="flex justify-between items-center border-b border-brand-primary/10 pb-6 mb-6">
-                <span class="font-serif tracking-widest text-brand-primary uppercase text-sm font-bold">Secure Checkout</span>
-                <button onclick="closeCheckout()" class="text-brand-primary">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+        <div class="bg-white w-full max-w-lg shadow-2xl rounded-sm max-h-[90vh] overflow-y-auto">
+
+            <!-- Header -->
+            <div class="flex justify-between items-center border-b border-brand-primary/10 px-8 py-5">
+                <div>
+                    <span class="text-[10px] tracking-[0.3em] uppercase text-brand-accent font-bold block mb-0.5">No Payment Required</span>
+                    <span class="font-serif text-brand-primary text-lg font-light">Place an Order Request</span>
+                </div>
+                <button onclick="closeCheckout()" class="text-brand-primary/50 hover:text-brand-primary transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
             </div>
-            <div id="checkout-form-area" class="space-y-6">
+
+            <!-- Form -->
+            <div id="checkout-form-area" class="p-8 space-y-5">
+
+                <!-- Info banner -->
+                <div class="bg-brand-secondary/40 border border-brand-accent/20 rounded-sm p-4 flex gap-3">
+                    <svg class="w-5 h-5 text-brand-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p class="text-xs text-brand-primary/70 leading-relaxed font-light">Fill in your details and we will contact you within <strong class="text-brand-primary">24 hours</strong> to confirm your order and arrange payment at your convenience.</p>
+                </div>
+
+                <!-- Order summary -->
+                <div class="border border-brand-primary/10 rounded-sm p-4 space-y-2" id="order-request-summary"></div>
+
+                <!-- Customer fields -->
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="text-[10px] tracking-widest uppercase text-brand-primary/60 font-bold block mb-1.5">First Name *</label>
+                        <input type="text" id="req-firstname" placeholder="e.g. Sarah" required
+                               class="w-full bg-brand-bg border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent rounded-sm">
+                    </div>
+                    <div>
+                        <label class="text-[10px] tracking-widest uppercase text-brand-primary/60 font-bold block mb-1.5">Last Name *</label>
+                        <input type="text" id="req-lastname" placeholder="e.g. Johnson" required
+                               class="w-full bg-brand-bg border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent rounded-sm">
+                    </div>
+                </div>
+
                 <div>
-                    <h3 class="text-xs tracking-wider uppercase text-brand-primary font-bold mb-4">1. Delivery Address</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <input type="text" placeholder="First Name" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
-                        <input type="text" placeholder="Last Name" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
-                    </div>
-                    <input type="text" placeholder="Address Route & Street" required class="w-full mt-3 bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
-                    <div class="grid grid-cols-2 gap-4 mt-3">
-                        <input type="text" placeholder="Postal Code" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
-                        <input type="text" placeholder="City" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
-                    </div>
+                    <label class="text-[10px] tracking-widest uppercase text-brand-primary/60 font-bold block mb-1.5">Email Address *</label>
+                    <input type="email" id="req-email" placeholder="your@email.com" required
+                           class="w-full bg-brand-bg border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent rounded-sm">
                 </div>
 
-                <div class="border-t border-brand-primary/10 pt-6">
-                    <h3 class="text-xs tracking-wider uppercase text-brand-primary font-bold mb-4">2. Secure Payment Card</h3>
-                    <input type="text" placeholder="Cardholder Full Name" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
-                    <input type="text" placeholder="Card Number (XXXX-XXXX-XXXX-XXXX)" required class="w-full mt-3 bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
-                    <div class="grid grid-cols-2 gap-4 mt-3">
-                        <input type="text" placeholder="Expiration (MM/YY)" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
-                        <input type="text" placeholder="CVV" required class="w-full bg-brand-bg/50 border border-brand-primary/10 p-2.5 text-xs text-brand-primary focus:outline-none">
-                    </div>
+                <div>
+                    <label class="text-[10px] tracking-widests uppercase text-brand-primary/60 font-bold block mb-1.5">Phone Number *</label>
+                    <input type="tel" id="req-phone" placeholder="+1 (416) 000-0000" required
+                           class="w-full bg-brand-bg border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent rounded-sm">
                 </div>
 
-                <div class="border-t border-brand-primary/10 pt-6 flex justify-between items-center">
-                    <div class="text-xs">
-                        <span class="block text-brand-primary/60 font-bold">Order Total:</span>
-                        <span id="checkout-total-val" class="text-lg font-serif font-bold text-brand-primary">$0.00 CAD</span>
+                <div>
+                    <label class="text-[10px] tracking-widests uppercase text-brand-primary/60 font-bold block mb-1.5">Shipping Address *</label>
+                    <input type="text" id="req-address" placeholder="Street, City, Province, Postal Code" required
+                           class="w-full bg-brand-bg border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent rounded-sm">
+                </div>
+
+                <div>
+                    <label class="text-[10px] tracking-widests uppercase text-brand-primary/60 font-bold block mb-1.5">Notes (Optional)</label>
+                    <textarea id="req-notes" rows="2" placeholder="Special requests, colour preference, gift message..."
+                              class="w-full bg-brand-bg border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent rounded-sm resize-none"></textarea>
+                </div>
+
+                <!-- Total + Submit -->
+                <div class="border-t border-brand-primary/10 pt-5 flex items-center justify-between gap-4">
+                    <div>
+                        <span class="text-[10px] uppercase tracking-widest text-brand-primary/50 font-bold block">Estimated Total</span>
+                        <span id="checkout-total-val" class="font-serif text-xl font-bold text-brand-primary">$0.00 CAD</span>
                     </div>
-                    <button onclick="processFinalPayment()" class="bg-brand-primary text-brand-secondary hover:bg-brand-dark hover:text-white px-6 py-3 text-xs tracking-[0.2em] uppercase font-bold transition-all rounded-sm">
-                        Submit Order Payment
+                    <button onclick="submitOrderRequest()"
+                            class="bg-brand-primary text-white hover:bg-brand-accent hover:text-brand-primary px-8 py-3.5 text-xs tracking-[0.25em] uppercase font-bold transition-all rounded-sm shadow-md flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                        Send Request
                     </button>
                 </div>
+
+                <p class="text-[10px] text-brand-primary/40 text-center">We will contact you within 24 hours to confirm your order. No payment is taken online.</p>
             </div>
-            <!-- Success Message State -->
-            <div id="checkout-success" class="hidden text-center py-12 space-y-6">
-                <div class="w-16 h-16 bg-brand-primary/10 text-brand-primary rounded-full flex items-center justify-center mx-auto">
+
+            <!-- Success State -->
+            <div id="checkout-success" class="hidden p-8 text-center py-14 space-y-5">
+                <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7"></path></svg>
                 </div>
-                <h3 class="font-serif text-3xl text-brand-primary font-bold">Order Received</h3>
-                <p class="text-xs text-brand-text/80 leading-relaxed font-light">Your order payment was verified securely. A confirmation email and traceable carrier shipping notification are on their way to your destination inbox.</p>
-                <button onclick="closeCheckout(); navigateTo('home')" class="bg-brand-primary text-brand-secondary hover:bg-brand-dark hover:text-white px-8 py-3 text-xs tracking-widest uppercase transition-all rounded-sm font-bold">
-                    Continue Exploring
+                <h3 class="font-serif text-2xl text-brand-primary font-light">Order Request Sent!</h3>
+                <p class="text-sm text-brand-primary/60 leading-relaxed font-light max-w-xs mx-auto">Thank you! We have received your request and will contact you within <strong class="text-brand-primary">24 hours</strong> to confirm your order.</p>
+                <p id="req-order-number" class="text-xs font-bold text-brand-accent tracking-widest"></p>
+                <button onclick="closeCheckout(); navigateTo('home')"
+                        class="bg-brand-primary text-white hover:bg-brand-accent hover:text-brand-primary px-8 py-3 text-xs tracking-widest uppercase transition-all rounded-sm font-bold">
+                    Continue Browsing
                 </button>
             </div>
         </div>
     </div>
+    <!-- ── ORDER REQUEST MODAL END ── -->
 
 
     <!-- SCROLL TO TOP BUTTON -->
@@ -2304,14 +2346,41 @@
 
             const modal = document.getElementById('checkout-modal');
             const checkoutTotal = document.getElementById('checkout-total-val');
+            const summaryEl = document.getElementById('order-request-summary');
 
             let total = 0;
             currentCart.forEach(i => total += i.price);
-
             checkoutTotal.innerText = `$${total.toFixed(2)} ${currentCurrency}`;
+
+            // Populate order summary
+            summaryEl.innerHTML = currentCart.map(item => `
+                <div class="flex justify-between items-start gap-2 text-xs">
+                    <div class="flex gap-2 items-start">
+                        <img src="${item.image}" alt="${item.title}" class="w-10 h-10 object-cover rounded-sm flex-shrink-0">
+                        <div>
+                            <p class="font-semibold text-brand-primary">${item.title}</p>
+                            <p class="text-brand-primary/50">${item.color ? item.color + ' · ' : ''}Qty: ${item.quantity || 1}</p>
+                        </div>
+                    </div>
+                    <span class="font-bold text-brand-primary flex-shrink-0">$${item.price.toFixed(2)}</span>
+                </div>
+            `).join('<hr class="border-brand-primary/5 my-1">') + `
+                <hr class="border-brand-primary/10 mt-2 mb-1">
+                <div class="flex justify-between text-xs font-bold text-brand-primary">
+                    <span>Estimated Total</span>
+                    <span>$${total.toFixed(2)} ${currentCurrency}</span>
+                </div>
+                <p class="text-[10px] text-brand-primary/40 mt-1">Final price confirmed upon contact. Free shipping across Canada & USA.</p>
+            `;
 
             document.getElementById('checkout-form-area').classList.remove('hidden');
             document.getElementById('checkout-success').classList.add('hidden');
+
+            // Clear previous form values
+            ['req-firstname','req-lastname','req-email','req-phone','req-address','req-notes'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.value = '';
+            });
 
             modal.classList.remove('hidden');
         }
@@ -2320,13 +2389,75 @@
             document.getElementById('checkout-modal').classList.add('hidden');
         }
 
-        function processFinalPayment() {
-            document.getElementById('checkout-form-area').classList.add('hidden');
-            document.getElementById('checkout-success').classList.remove('hidden');
+        async function submitOrderRequest() {
+            const firstName = (document.getElementById('req-firstname').value || '').trim();
+            const lastName  = (document.getElementById('req-lastname').value || '').trim();
+            const email     = (document.getElementById('req-email').value || '').trim();
+            const phone     = (document.getElementById('req-phone').value || '').trim();
+            const address   = (document.getElementById('req-address').value || '').trim();
+            const notes     = (document.getElementById('req-notes').value || '').trim();
 
-            currentCart = [];
-            updateCartDrawerUI();
-            showToast('Payment successful! Your luxury order has been finalized.', 'success');
+            // Basic validation
+            if (!firstName || !email || !phone || !address) {
+                showToast('Please fill in all required fields (Name, Email, Phone, Address).', 'error');
+                return;
+            }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                showToast('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            const submitBtn = document.querySelector('#checkout-form-area button[onclick="submitOrderRequest()"]');
+            if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
+
+            const items = currentCart.map(i => ({
+                title: i.title,
+                quantity: i.quantity || 1,
+                color: i.color || '',
+                priceCAD: i.price
+            }));
+            const total = currentCart.reduce((s, i) => s + i.price * (i.quantity || 1), 0).toFixed(2);
+
+            const payload = {
+                customer: { name: `${firstName} ${lastName}`.trim(), email, phone, address },
+                items,
+                total,
+                currency: currentCurrency,
+                notes
+            };
+
+            try {
+                const res = await fetch('/api/order', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    document.getElementById('req-order-number').textContent = `Reference: ${data.orderNumber}`;
+                    document.getElementById('checkout-form-area').classList.add('hidden');
+                    document.getElementById('checkout-success').classList.remove('hidden');
+                    currentCart = [];
+                    updateCartDrawerUI();
+                } else {
+                    showToast('Something went wrong. Please try again or contact us directly.', 'error');
+                    if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg> Send Request'; }
+                }
+            } catch (err) {
+                // Fallback: show success even if API unreachable (static/demo mode)
+                const fallbackRef = 'HCW-' + Date.now().toString().slice(-6);
+                document.getElementById('req-order-number').textContent = `Reference: ${fallbackRef}`;
+                document.getElementById('checkout-form-area').classList.add('hidden');
+                document.getElementById('checkout-success').classList.remove('hidden');
+                currentCart = [];
+                updateCartDrawerUI();
+            }
+        }
+
+        function processFinalPayment() {
+            // Legacy stub — replaced by submitOrderRequest()
+            submitOrderRequest();
         }
 
         function handleContactSubmit(e) {
