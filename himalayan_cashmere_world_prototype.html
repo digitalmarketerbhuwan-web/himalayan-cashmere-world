@@ -312,12 +312,12 @@
                 <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
 
                     <!-- Product 1 -->
-                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                    <div class="group cursor-pointer" onclick="openProductPage('3')">
                         <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
                             <img src="images/product-6022.png" alt="100% Cashmere Jali Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
                             <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Best Seller</span>
                             <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
-                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">View Details</span>
                             </div>
                         </div>
                         <div class="space-y-1">
@@ -328,12 +328,12 @@
                     </div>
 
                     <!-- Product 2 -->
-                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                    <div class="group cursor-pointer" onclick="openProductPage('4')">
                         <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
                             <img src="images/product-6649.png" alt="3-Colour Checked Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
                             <span class="absolute top-4 left-4 bg-brand-accent text-white text-[8px] font-bold tracking-widest uppercase py-1 px-3">Popular</span>
                             <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
-                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">View Details</span>
                             </div>
                         </div>
                         <div class="space-y-1">
@@ -344,12 +344,12 @@
                     </div>
 
                     <!-- Product 3 -->
-                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                    <div class="group cursor-pointer" onclick="openProductPage('5')">
                         <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
                             <img src="images/product-6715.png" alt="Multi-Colour Check Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
                             <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Ethically Sourced</span>
                             <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
-                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">View Details</span>
                             </div>
                         </div>
                         <div class="space-y-1">
@@ -360,12 +360,12 @@
                     </div>
 
                     <!-- Product 4 -->
-                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                    <div class="group cursor-pointer" onclick="openProductPage('6')">
                         <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
                             <img src="images/product-6791.png" alt="Basket Weave Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
                             <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Handcrafted</span>
                             <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
-                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">View Details</span>
                             </div>
                         </div>
                         <div class="space-y-1">
@@ -1847,83 +1847,256 @@
             const prod = productCatalog.find(p => p.id === productId);
             if (!prod) return;
 
-            const priceStr = currentCurrency === 'CAD' ? `$${prod.priceCAD.toFixed(2)} CAD` : `$${prod.priceUSD.toFixed(2)} USD`;
-            const detailContainer = document.getElementById('product-detail-area');
+            const priceCAD = prod.priceCAD.toFixed(2);
+            const priceUSD = prod.priceUSD.toFixed(2);
+            const priceStr = currentCurrency === 'CAD' ? `$${priceCAD} CAD` : `$${priceUSD} USD`;
 
-            let swatchesHTML = '';
-            prod.colors.forEach((col, idx) => {
-                const activeBorder = idx === 0 ? 'ring-2 ring-brand-primary' : '';
-                swatchesHTML += `
-                    <button onclick="selectSwatch(this, '${col}')" class="w-6 h-6 rounded-full border border-brand-primary/20 bg-brand-secondary/40 text-[9px] font-bold text-brand-primary hover:scale-105 transition-transform ${activeBorder}" title="${col}">
-                        ${col[0]}
-                    </button>
-                `;
-            });
+            // Stock level based on product id (simulated)
+            const stockLevels = { '1':'In Stock','2':'In Stock','3':'Low Stock — 3 left','4':'In Stock','5':'In Stock','6':'Low Stock — 2 left','7':'In Stock','8':'In Stock','9':'In Stock','10':'Made to Order' };
+            const stockLabel = stockLevels[prod.id] || 'In Stock';
+            const isLow = stockLabel.includes('Low') || stockLabel.includes('Made');
+            const stockColor = isLow ? 'text-amber-600' : 'text-emerald-600';
+            const stockDot = isLow ? 'bg-amber-500' : 'bg-emerald-500';
 
-            detailContainer.innerHTML = `
-                <div class="space-y-6">
-                    <div class="aspect-[4/5] bg-neutral-100 overflow-hidden rounded-sm">
-                        <img src="${prod.images[0]}" id="zoom-img" alt="${prod.title}" class="w-full h-full object-cover hover:scale-[1.05] transition-transform duration-700">
+            // Related products (exclude current)
+            const related = productCatalog.filter(p => p.id !== prod.id && (p.category === prod.category)).slice(0,3);
+            const relatedHTML = related.map(r => {
+                const rPrice = currentCurrency === 'CAD' ? `$${r.priceCAD.toFixed(2)} CAD` : `$${r.priceUSD.toFixed(2)} USD`;
+                return `<div class="group cursor-pointer" onclick="openProductPage('${r.id}')">
+                    <div class="aspect-[3/4] bg-neutral-100 overflow-hidden rounded-sm mb-3">
+                        <img src="${r.images[0]}" alt="${r.title}" class="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-700">
                     </div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <button onclick="changeZoomImg('${prod.images[0]}')" class="aspect-[4/3] bg-neutral-100 overflow-hidden rounded-sm"><img src="${prod.images[0]}" class="w-full h-full object-cover"></button>
-                        <button onclick="changeZoomImg('${prod.images[1]}')" class="aspect-[4/3] bg-neutral-100 overflow-hidden rounded-sm"><img src="${prod.images[1]}" class="w-full h-full object-cover"></button>
+                    <p class="font-serif text-sm text-brand-primary font-bold group-hover:text-brand-accent transition-colors">${r.title}</p>
+                    <p class="text-xs text-brand-primary/50 mt-0.5">${rPrice}</p>
+                </div>`;
+            }).join('');
+
+            // Gallery thumbs
+            const thumbsHTML = prod.images.map((img, i) => `
+                <button onclick="pdpZoom('${img}', this)" class="aspect-square bg-neutral-100 overflow-hidden rounded-sm border-2 transition-all ${i===0?'border-brand-primary':'border-transparent hover:border-brand-primary/40'}">
+                    <img src="${img}" alt="${prod.title}" class="w-full h-full object-cover">
+                </button>`).join('');
+
+            // Color swatches
+            const swatchHTML = prod.colors.map((col, i) => `
+                <button onclick="pdpSwatch(this)" class="pdp-swatch px-4 py-2 text-[10px] font-bold tracking-widest uppercase border rounded-sm transition-all ${i===0?'border-brand-primary bg-brand-primary text-white':'border-brand-primary/25 text-brand-primary hover:border-brand-primary'}">
+                    ${col}
+                </button>`).join('');
+
+            document.getElementById('product-detail-area').innerHTML = `
+                <!-- LEFT: Image Gallery -->
+                <div class="space-y-4">
+                    <!-- Main image -->
+                    <div class="aspect-[4/5] bg-neutral-100 overflow-hidden rounded-sm relative">
+                        <img id="pdp-main-img" src="${prod.images[0]}" alt="${prod.title}" class="w-full h-full object-cover hover:scale-[1.04] transition-transform duration-700">
+                        <span class="absolute top-4 left-4 bg-brand-accent text-white text-[9px] font-bold tracking-widest uppercase py-1.5 px-3 rounded-sm">
+                            ${prod.category === 'wraps' ? 'Shawl & Stole' : prod.category === 'apparel' ? 'Knitwear' : 'Accessory'}
+                        </span>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="grid grid-cols-4 gap-3">${thumbsHTML}</div>
+
+                    <!-- Trust badges -->
+                    <div class="grid grid-cols-3 gap-3 pt-2">
+                        <div class="border border-brand-primary/10 p-3 text-center rounded-sm">
+                            <svg class="w-5 h-5 mx-auto text-brand-accent mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            <p class="text-[9px] tracking-widest uppercase text-brand-primary font-bold">Certified<br>Cashmere</p>
+                        </div>
+                        <div class="border border-brand-primary/10 p-3 text-center rounded-sm">
+                            <svg class="w-5 h-5 mx-auto text-brand-accent mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                            <p class="text-[9px] tracking-widest uppercase text-brand-primary font-bold">Fair Trade<br>Nepal</p>
+                        </div>
+                        <div class="border border-brand-primary/10 p-3 text-center rounded-sm">
+                            <svg class="w-5 h-5 mx-auto text-brand-accent mb-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                            <p class="text-[9px] tracking-widest uppercase text-brand-primary font-bold">Free CA<br>Shipping</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="space-y-8">
+                <!-- RIGHT: Product Info -->
+                <div class="space-y-7">
+
+                    <!-- Breadcrumb -->
+                    <p class="text-[10px] tracking-widest uppercase text-brand-primary/40">
+                        Home &rsaquo; ${prod.category === 'wraps' ? 'Shawls & Stoles' : prod.category === 'apparel' ? 'Knitwear' : 'Accessories'} &rsaquo; ${prod.title}
+                    </p>
+
+                    <!-- Title & Price -->
                     <div>
-                        <span class="text-xs tracking-[0.3em] uppercase text-brand-accent font-bold block mb-2">Authentic Chyangra Pashmina</span>
-                        <h1 class="font-serif text-3xl md:text-5xl text-brand-primary font-light leading-tight">${prod.title}</h1>
+                        <span class="text-[10px] tracking-[0.3em] uppercase text-brand-accent font-bold block mb-2">Authentic Chyangra Pashmina · Since 2009</span>
+                        <h1 class="font-serif text-3xl md:text-4xl text-brand-primary font-light leading-tight">${prod.title}</h1>
                         <p class="text-brand-primary/50 text-xs tracking-wider italic mt-1">${prod.tagline}</p>
-                        <p class="font-serif text-2xl text-brand-primary mt-4 font-bold">${priceStr}</p>
-                    </div>
 
-                    <p class="text-base text-brand-text/80 leading-relaxed font-light">${prod.description}</p>
-
-                    <div class="space-y-4 pt-4 border-t border-brand-primary/10">
-                        <div>
-                            <span class="block text-[10px] tracking-widest uppercase text-brand-primary/70 mb-2 font-bold">Select Shade</span>
-                            <div class="flex space-x-3" id="swatch-group">
-                                ${swatchesHTML}
+                        <!-- Price + stars -->
+                        <div class="flex items-center gap-4 mt-4">
+                            <p id="pdp-price" class="font-serif text-3xl text-brand-primary font-bold">${priceStr}</p>
+                            <div class="flex items-center gap-1">
+                                ${[1,2,3,4,5].map(s=>`<svg class="w-4 h-4 text-brand-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>`).join('')}
+                                <span class="text-xs text-brand-primary/50 ml-1">(47 reviews)</span>
                             </div>
                         </div>
+                    </div>
 
-                        <div>
-                            <span class="block text-[10px] tracking-widest uppercase text-brand-primary/70 mb-2 font-bold">Custom Monogramming (Optional)</span>
-                            <input type="text" id="custom-monogram" placeholder="Up to 3 initials (e.g. A.B.)" maxlength="5" class="w-full max-w-xs bg-white border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none rounded-sm">
-                            <p class="text-[9px] text-brand-primary/50 mt-1">Hand-embroidered with Himalayan Gold thread (+$25.00 ${currentCurrency})</p>
+                    <!-- Stock indicator -->
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full ${stockDot} animate-pulse inline-block"></span>
+                        <span class="text-xs font-bold ${stockColor}">${stockLabel}</span>
+                        <span class="text-[10px] text-brand-primary/40 ml-1">· Dispatches within 2–3 business days</span>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-sm text-brand-primary/70 leading-relaxed font-light border-l-2 border-brand-accent/30 pl-4">${prod.description}</p>
+
+                    <!-- Colour Selection -->
+                    <div>
+                        <span class="block text-[10px] tracking-widest uppercase text-brand-primary/60 mb-3 font-bold">Select Shade — <span id="pdp-selected-color" class="text-brand-accent">${prod.colors[0]}</span></span>
+                        <div class="flex flex-wrap gap-2">${swatchHTML}</div>
+                    </div>
+
+                    <!-- Quantity -->
+                    <div>
+                        <span class="block text-[10px] tracking-widest uppercase text-brand-primary/60 mb-3 font-bold">Quantity</span>
+                        <div class="flex items-center border border-brand-primary/20 rounded-sm w-32">
+                            <button onclick="pdpQty(-1)" class="w-10 h-10 text-brand-primary hover:text-brand-accent text-lg font-bold transition-colors">−</button>
+                            <span id="pdp-qty" class="flex-1 text-center text-sm font-bold text-brand-primary">1</span>
+                            <button onclick="pdpQty(1)" class="w-10 h-10 text-brand-primary hover:text-brand-accent text-lg font-bold transition-colors">+</button>
                         </div>
                     </div>
 
-                    <div class="border-t border-brand-primary/10 pt-4 space-y-4">
-                        <div>
-                            <button onclick="toggleAccordion('det-panel-1')" class="w-full flex justify-between items-center py-2 text-left text-brand-primary font-serif text-lg focus:outline-none">
-                                <span class="font-bold">The Material Heritage</span>
-                                <span class="text-xs font-sans text-brand-accent">+</span>
+                    <!-- Monogram -->
+                    <div class="bg-brand-secondary/30 rounded-sm p-4">
+                        <span class="block text-[10px] tracking-widest uppercase text-brand-primary/70 mb-2 font-bold">✦ Custom Monogramming (Optional)</span>
+                        <input type="text" id="pdp-monogram" placeholder="Up to 3 initials — e.g. A.B.C." maxlength="5"
+                               class="w-full bg-white border border-brand-primary/15 p-2.5 text-xs text-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-accent rounded-sm">
+                        <p class="text-[9px] text-brand-primary/40 mt-1.5">Hand-embroidered in Himalayan Gold thread · +$25.00 ${currentCurrency} · Allow 3–5 extra days</p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="space-y-3 pt-2">
+                        <button onclick="addToCart('${prod.id}')"
+                                class="w-full bg-brand-primary text-white hover:bg-brand-accent hover:text-brand-primary py-4 text-xs tracking-[0.25em] uppercase font-bold transition-all duration-300 rounded-sm shadow-lg">
+                            Add to Selection
+                        </button>
+                        <button onclick="navigateTo('contact')"
+                                class="w-full border border-brand-primary/25 text-brand-primary hover:border-brand-primary py-3.5 text-xs tracking-[0.2em] uppercase font-semibold transition-all rounded-sm flex items-center justify-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                            Ask About This Piece
+                        </button>
+                    </div>
+
+                    <!-- Shipping & Returns -->
+                    <div class="border-t border-brand-primary/10 pt-5 grid grid-cols-2 gap-4 text-xs text-brand-primary/60">
+                        <div class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                            <span><strong class="text-brand-primary block">Free Shipping</strong>Canada & USA on all orders</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                            <span><strong class="text-brand-primary block">30-Day Returns</strong>No questions asked</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                            <span><strong class="text-brand-primary block">Secure Checkout</strong>SSL encrypted & safe</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-brand-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                            <span><strong class="text-brand-primary block">Gift Ready</strong>Luxury box included</span>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Details -->
+                    <div class="border-t border-brand-primary/10 pt-4 space-y-1">
+                        ${[
+                            ['Product Details', `100% Authentic Chyangra Cashmere · Hand-loomed in Kathmandu, Nepal · Azo-free Swiss dyes · Average fibre: 14.5 microns · Dimensions approx. 200cm × 70cm · Weight: 200g`],
+                            ['Care Instructions', `Hand wash in cold water with mild cashmere shampoo. Lay flat to dry — never tumble dry or wring. Store folded in the provided breathable cotton bag. For longevity, air between uses rather than washing frequently.`],
+                            ['Material Heritage', `Sourced from Chyangra mountain goats living above 14,000 ft in the Himalayas. Ethically combed during the spring moulting season — no animals are harmed. Certified by the Nepal Pashmina Industries Association (NPIA).`],
+                            ['Shipping Details', `Ships within 2–3 business days from Brampton, Ontario. Free tracked shipping across Canada and USA. International shipping available at checkout. Arrives in a signature Himalayan Cashmere World gift box.`]
+                        ].map(([title, body], i) => `
+                        <div class="border-b border-brand-primary/8">
+                            <button onclick="toggleAccordion('pdp-acc-${i}')" class="w-full flex justify-between items-center py-3.5 text-left focus:outline-none group">
+                                <span class="text-sm font-bold text-brand-primary group-hover:text-brand-accent transition-colors">${title}</span>
+                                <svg class="w-4 h-4 text-brand-accent transition-transform" id="pdp-acc-icon-${i}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
                             </button>
-                            <div id="det-panel-1" class="hidden mt-2 text-sm text-brand-text/75 leading-relaxed font-light">
-                                Our raw fiber registers an average thickness of 14.5 microns. Ethically combed during the traditional Himalayan molting season, ensuring zero animals are harmed. We use Azo-free Swiss dyes to preserve organic character.
-                            </div>
+                            <div id="pdp-acc-${i}" class="hidden pb-4 text-sm text-brand-primary/60 leading-relaxed font-light">${body}</div>
+                        </div>`).join('')}
+                    </div>
+                </div>
+
+                <!-- Related Products — full width below -->
+                ${relatedHTML.length ? `
+                <div class="col-span-1 lg:col-span-2 border-t border-brand-primary/10 pt-16 mt-8">
+                    <span class="text-[10px] tracking-[0.3em] uppercase text-brand-accent font-bold block mb-2">You May Also Love</span>
+                    <h3 class="font-serif text-2xl text-brand-primary font-light mb-10">Complete the Look</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-8">${relatedHTML}</div>
+                </div>` : ''}
+
+                <!-- Reviews Section -->
+                <div class="col-span-1 lg:col-span-2 border-t border-brand-primary/10 pt-16">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+                        <div>
+                            <span class="text-[10px] tracking-[0.3em] uppercase text-brand-accent font-bold block mb-2">Verified Buyers</span>
+                            <h3 class="font-serif text-2xl text-brand-primary font-light">What Our Customers Say</h3>
                         </div>
-                        <div class="border-b border-brand-primary/10 pb-4">
-                            <button onclick="toggleAccordion('det-panel-2')" class="w-full flex justify-between items-center py-2 text-left text-brand-primary font-serif text-lg focus:outline-none">
-                                <span class="font-bold">Artisan Hand-Looming</span>
-                                <span class="text-xs font-sans text-brand-accent">+</span>
-                            </button>
-                            <div id="det-panel-2" class="hidden mt-2 text-sm text-brand-text/75 leading-relaxed font-light">
-                                Proudly hand-loomed inside our carbon-offset workshop in Kathmandu Valley, Nepal. The intricate fringing of the edges takes up to 8 hours of patient micro-stitching alone, transforming each piece into a unique signature artwork.
-                            </div>
+                        <div class="flex items-center gap-3">
+                            <div class="flex">${[1,2,3,4,5].map(s=>`<svg class="w-5 h-5 text-brand-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>`).join('')}</div>
+                            <span class="font-serif text-2xl text-brand-primary font-bold">4.9</span>
+                            <span class="text-sm text-brand-primary/50">/ 47 reviews</span>
                         </div>
                     </div>
-
-                    <button onclick="addToCart('${prod.id}')" class="w-full bg-brand-primary text-brand-secondary hover:bg-brand-dark hover:text-white py-4 text-xs tracking-[0.2em] uppercase font-bold transition-all rounded-sm shadow-md">
-                        Add to Selection
-                    </button>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        ${[
+                            ['Sarah M.', 'Toronto, ON', 'Absolutely stunning quality. I\'ve worn mine every day this winter — the softness is unlike anything I\'ve owned. Worth every penny and then some.', '5'],
+                            ['Priya K.', 'Vancouver, BC', 'Gifted this to my mother for her birthday and she cried. The packaging alone is beautiful, and the stole is exquisite. Will be ordering again.', '5'],
+                            ['Catherine L.', 'Montreal, QC', 'I was hesitant about the price but after receiving it I understand completely. This is heirloom quality. The colour is even more beautiful in person.', '5']
+                        ].map(([name, loc, review, stars]) => `
+                        <div class="bg-white p-6 rounded-sm border border-brand-primary/8 space-y-3">
+                            <div class="flex">${Array(parseInt(stars)).fill('<svg class="w-3.5 h-3.5 text-brand-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>').join('')}</div>
+                            <p class="text-sm text-brand-primary/70 font-light italic leading-relaxed">"${review}"</p>
+                            <div>
+                                <p class="text-xs font-bold text-brand-primary">${name}</p>
+                                <p class="text-[10px] text-brand-primary/40">${loc} · Verified Purchase</p>
+                            </div>
+                        </div>`).join('')}
+                    </div>
                 </div>
             `;
 
+            // Wire up accordion toggle with icon flip
+            window.toggleAccordion = function(id) {
+                const panel = document.getElementById(id);
+                const iconId = id.replace('pdp-acc-', 'pdp-acc-icon-');
+                const icon = document.getElementById(iconId);
+                if (panel) {
+                    const isHidden = panel.classList.toggle('hidden');
+                    if (icon) icon.style.transform = isHidden ? '' : 'rotate(45deg)';
+                }
+            };
+
+            window.pdpQty = function(delta) {
+                const el = document.getElementById('pdp-qty');
+                let q = parseInt(el.textContent) + delta;
+                if (q < 1) q = 1; if (q > 10) q = 10;
+                el.textContent = q;
+            };
+
+            window.pdpZoom = function(src, btn) {
+                document.getElementById('pdp-main-img').src = src;
+                document.querySelectorAll('.aspect-square button, [onclick^="pdpZoom"]').forEach(b => b.classList.remove('border-brand-primary'));
+                btn.classList.add('border-brand-primary');
+            };
+
+            window.pdpSwatch = function(btn) {
+                document.querySelectorAll('.pdp-swatch').forEach(b => {
+                    b.classList.remove('border-brand-primary','bg-brand-primary','text-white');
+                    b.classList.add('border-brand-primary/25','text-brand-primary');
+                });
+                btn.classList.add('border-brand-primary','bg-brand-primary','text-white');
+                btn.classList.remove('border-brand-primary/25','text-brand-primary');
+                document.getElementById('pdp-selected-color').textContent = btn.textContent.trim();
+            };
+
             navigateTo('product');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function selectSwatch(btn, colorName) {
