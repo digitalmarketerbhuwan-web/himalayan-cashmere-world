@@ -1431,59 +1431,59 @@
             },
             {
                 id: '3',
-                title: 'Kathmandu Silk Blend Stole',
-                tagline: 'Pure cashmere & silk — luminous artisan weave',
+                title: 'Indigo Printed Cashmere Shawl',
+                tagline: 'Hand block-printed — rich indigo Himalayan heritage',
                 category: 'wraps',
-                priceCAD: 165.00,
-                priceUSD: 123.00,
-                colorName: 'Soft Blush',
-                colors: ['Soft Blush', 'Pearl White', 'Sage'],
+                priceCAD: 265.00,
+                priceUSD: 198.00,
+                colorName: 'Indigo Blue',
+                colors: ['Indigo Blue', 'Navy', 'Midnight'],
                 images: [
-                    'images/product-silk-stole.jpg'
+                    'images/product-indigo-printed-shawl.jpg'
                 ],
-                description: 'A harmonious blend of Chyangra cashmere and fine mulberry silk, creating an extraordinary fabric with an ethereal luminosity. Woven on 18th-century-style looms in Kathmandu, each stole exhibits a subtle sheen unique to the silk-cashmere union.'
+                description: 'A stunning hand block-printed cashmere shawl in deep indigo tones, crafted by skilled artisans in Kathmandu Valley. Each print is applied by hand using traditional wooden blocks, creating a unique pattern that celebrates centuries of Himalayan textile heritage.'
             },
             {
                 id: '4',
-                title: 'Heritage Dyed Pashmina Scarf',
-                tagline: 'Artisan plant-dyed — timeless Himalayan heritage',
+                title: 'Pompom Triangle Scarf',
+                tagline: 'Playful pompom fringe — casual luxury redefined',
                 category: 'wraps',
-                priceCAD: 198.00,
-                priceUSD: 148.00,
-                colorName: 'Terra Cotta',
-                colors: ['Terra Cotta', 'Indigo', 'Saffron'],
+                priceCAD: 185.00,
+                priceUSD: 138.00,
+                colorName: 'Natural Cream',
+                colors: ['Natural Cream', 'Soft Grey', 'Blush Pink'],
                 images: [
-                    'images/product-pashmina-scarf.jpg'
+                    'images/product-pompom-triangle-scarf.jpg'
                 ],
-                description: 'Coloured using traditional plant-based dyes passed down through generations of Nepalese dye masters, this scarf carries a depth of tone impossible to achieve with synthetic pigments. Each piece is unique — minor variations in tone are a mark of authentic handcraft.'
+                description: 'A fun yet luxurious triangle scarf finished with hand-tied pompom details along the edges. Woven from pure Chyangra cashmere, it wraps effortlessly around the shoulders for a casual-chic look. The pompom fringe adds a playful touch to an otherwise refined piece.'
             },
             {
                 id: '5',
-                title: 'Everest Heritage Cashmere Shawl',
-                tagline: 'Pure grade-A cashmere — heirloom-worthy warmth',
+                title: 'Natural White Cashmere Wrap',
+                tagline: 'Undyed pure cashmere — timeless natural elegance',
                 category: 'wraps',
-                priceCAD: 289.00,
-                priceUSD: 215.00,
-                colorName: 'Storm Grey',
-                colors: ['Storm Grey', 'Natural Ecru', 'Cobalt Blue'],
+                priceCAD: 298.00,
+                priceUSD: 222.00,
+                colorName: 'Natural White',
+                colors: ['Natural White', 'Cream', 'Ivory'],
                 images: [
-                    'images/product-cashmere-shawl.jpg'
+                    'images/product-natural-white-wrap.jpg'
                 ],
-                description: 'Named for the world\'s highest peak, this shawl is woven from the finest grade-A Chyangra cashmere fibre — collected at altitudes above 4,000 metres where cold climates produce the softest, most insulating fleece. A classic investment piece built to last a lifetime.'
+                description: 'A beautifully pure, undyed cashmere wrap in the natural white colour of the Chyangra goat fibre. Free from any chemical processing, this piece represents the most authentic form of Himalayan cashmere — breathtakingly soft, naturally hypoallergenic, and incredibly warm.'
             },
             {
                 id: '6',
-                title: 'Royal Chyangra Wrap',
-                tagline: 'Ultra-fine 2-ply weave — the pinnacle of luxury',
+                title: 'Handspun Pompom Cashmere Shawl',
+                tagline: 'Handspun & hand-knotted — artisan pompom luxury',
                 category: 'wraps',
                 priceCAD: 349.00,
                 priceUSD: 260.00,
-                colorName: 'Royal Camel',
-                colors: ['Royal Camel', 'Ivory', 'Charcoal'],
+                colorName: 'Warm Taupe',
+                colors: ['Warm Taupe', 'Charcoal', 'Dusty Rose'],
                 images: [
-                    'images/product-chyangra-wrap.jpg'
+                    'images/product-handspun-pompom-shawl.jpg'
                 ],
-                description: 'Our most prestigious wrap, crafted from 2-ply Chyangra cashmere of exceptional fineness — measuring under 14 microns in diameter. An extraordinary level of softness that must be felt to be believed. The considered weight provides warmth without bulk, season after season.'
+                description: 'Handspun on traditional drop spindles by female artisans in Kathmandu, this shawl showcases the finest expression of Nepalese textile craft. The oversized pompom details at each corner are hand-knotted individually — a labour of love that takes over three hours per shawl.'
             },
             {
                 id: '7',
@@ -1523,7 +1523,7 @@
                 colorName: 'Warm Caramel',
                 colors: ['Warm Caramel', 'Ivory', 'Dusty Rose'],
                 images: [
-                    'images/product-pashmina-scarf.jpg'
+                    'images/product-layered-poncho.jpg'
                 ],
                 description: 'Inspired by the sweeping landscapes of the Himalayas, this poncho falls in generous, fluid layers of pure cashmere. The oversized silhouette creates beautiful movement as you walk, while the exceptional warmth makes it ideal for cool Canadian evenings and mountain escapes alike.'
             },
@@ -1617,7 +1617,9 @@
             if (!container) return;
             container.innerHTML = '';
 
-            productCatalog.forEach((prod, i) => {
+            // Show only shawls, stoles, sweaters & ponchos — exclude accessories
+            const feedProducts = productCatalog.filter(p => p.category === 'wraps' || p.category === 'apparel');
+            feedProducts.forEach((prod, i) => {
                 const priceStr = currentCurrency === 'CAD' ? `$${prod.priceCAD.toFixed(2)} CAD` : `$${prod.priceUSD.toFixed(2)} USD`;
                 container.innerHTML += `
                     <div class="group cursor-pointer relative flex-shrink-0 w-64 h-72 overflow-hidden rounded-sm snap-start bg-neutral-100" onclick="openIgLightbox(${i})">
@@ -1638,9 +1640,12 @@
             });
         }
 
+        const igFeedProducts = () => productCatalog.filter(p => p.category === 'wraps' || p.category === 'apparel');
+
         function openIgLightbox(index) {
             igCurrentIndex = index;
-            const prod = productCatalog[index];
+            const feed = igFeedProducts();
+            const prod = feed[index];
             if (!prod) return;
             const priceStr = currentCurrency === 'CAD' ? `$${prod.priceCAD.toFixed(2)} CAD` : `$${prod.priceUSD.toFixed(2)} USD`;
             document.getElementById('ig-lightbox-img').src = prod.images[0];
@@ -1664,7 +1669,8 @@
         }
 
         function igLightboxNav(dir) {
-            const next = (igCurrentIndex + dir + productCatalog.length) % productCatalog.length;
+            const feed = igFeedProducts();
+            const next = (igCurrentIndex + dir + feed.length) % feed.length;
             openIgLightbox(next);
         }
 
