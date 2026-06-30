@@ -312,23 +312,88 @@
                 </div>
             </section>
 
+            <!-- ── Fan-Favourite Originals ── -->
             <section class="py-24 bg-brand-bg px-6 lg:px-12">
                 <div class="max-w-7xl mx-auto mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div>
-                        <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-2 font-bold">Handpicked Luxury</span>
-                        <h2 class="font-serif text-3xl md:text-5xl text-brand-primary font-light">The Best Sellers</h2>
+                        <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-2 font-bold">Our Heritage Collection</span>
+                        <h2 class="font-serif text-3xl md:text-5xl text-brand-primary font-light">Fan-Favourite Originals</h2>
+                        <p class="text-brand-primary/60 text-sm font-light mt-3 max-w-lg">The stoles that built our reputation — authentic handwoven Chyangra cashmere pieces loved by our customers since 2009.</p>
                     </div>
                     <div>
                         <button onclick="navigateTo('shop')" class="text-xs tracking-[0.2em] uppercase text-brand-primary font-semibold hover:text-brand-accent transition-colors flex items-center space-x-2">
-                            <span>Browse All Products</span>
+                            <span>Shop All</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </button>
                     </div>
                 </div>
 
-                <!-- Best Sellers Grid -->
-                <div id="homepage-featured" class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-                    <!-- Loaded dynamically via JavaScript -->
+                <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+
+                    <!-- Product 1 -->
+                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="images/product-6022.png" alt="100% Cashmere Jali Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Best Seller</span>
+                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">100% Cashmere Jali Stole</h3>
+                            <p class="text-xs text-brand-primary/50 italic">Cut fringe — timeless Himalayan craftsmanship</p>
+                            <p class="text-xs font-bold text-brand-primary pt-1">$395.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="images/product-6649.png" alt="3-Colour Checked Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                            <span class="absolute top-4 left-4 bg-brand-accent text-white text-[8px] font-bold tracking-widest uppercase py-1 px-3">Popular</span>
+                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">3-Colour Checked Stole</h3>
+                            <p class="text-xs text-brand-primary/50 italic">Heritage check pattern — a wardrobe icon</p>
+                            <p class="text-xs font-bold text-brand-primary pt-1">$345.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="images/product-6715.png" alt="Multi-Colour Check Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Ethically Sourced</span>
+                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">Multi-Colour Check Stole</h3>
+                            <p class="text-xs text-brand-primary/50 italic">Vibrant heritage — artisan dyed</p>
+                            <p class="text-xs font-bold text-brand-primary pt-1">$360.00 CAD</p>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
+                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
+                            <img src="images/product-6791.png" alt="Basket Weave Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
+                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Handcrafted</span>
+                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
+                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">Basket Weave Stole</h3>
+                            <p class="text-xs text-brand-primary/50 italic">Architectural texture — understated luxury</p>
+                            <p class="text-xs font-bold text-brand-primary pt-1">$375.00 CAD</p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -411,88 +476,32 @@
                 </div>
             </section>
 
-            <!-- ── Fan-Favourite Originals ── -->
+            <!-- ── As Seen On Instagram / Best Sellers ── -->
             <section class="py-24 bg-brand-secondary/20 px-6 lg:px-12 border-t border-brand-primary/5">
-                <div class="max-w-7xl mx-auto mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
-                    <div>
-                        <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-2 font-bold">Our Heritage Collection</span>
-                        <h2 class="font-serif text-3xl md:text-5xl text-brand-primary font-light">Fan-Favourite Originals</h2>
-                        <p class="text-brand-primary/60 text-sm font-light mt-3 max-w-lg">The stoles that built our reputation — authentic handwoven Chyangra cashmere pieces loved by our customers since 2009.</p>
-                    </div>
-                    <div>
-                        <button onclick="navigateTo('shop')" class="text-xs tracking-[0.2em] uppercase text-brand-primary font-semibold hover:text-brand-accent transition-colors flex items-center space-x-2">
-                            <span>Shop All</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </button>
+                <!-- Section header -->
+                <div class="max-w-7xl mx-auto mb-12 text-center">
+                    <span class="text-xs tracking-[0.3em] uppercase text-brand-accent block mb-2 font-bold">As Seen On</span>
+                    <h2 class="font-serif text-3xl md:text-5xl text-brand-primary font-light">@himalayancashmereworld</h2>
+                    <p class="text-brand-primary/50 text-sm font-light mt-3">Shop our most-loved pieces — handpicked from the collection.</p>
+                </div>
+
+                <!-- Instagram-style mosaic grid -->
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[220px] gap-3" id="homepage-featured">
+                        <!-- Loaded dynamically via JavaScript -->
                     </div>
                 </div>
 
-                <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-
-                    <!-- Product 1 -->
-                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
-                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
-                            <img src="images/product-6022.png" alt="100% Cashmere Jali Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
-                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Best Seller</span>
-                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
-                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
-                            </div>
-                        </div>
-                        <div class="space-y-1">
-                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">100% Cashmere Jali Stole</h3>
-                            <p class="text-xs text-brand-primary/50 italic">Cut fringe — timeless Himalayan craftsmanship</p>
-                            <p class="text-xs font-bold text-brand-primary pt-1">$395.00 CAD</p>
-                        </div>
+                <!-- Follow CTA -->
+                <div class="max-w-7xl mx-auto mt-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-brand-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <span class="text-sm text-brand-primary/70 font-light">Follow us for daily inspiration from the Himalayas</span>
                     </div>
-
-                    <!-- Product 2 -->
-                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
-                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
-                            <img src="images/product-6649.png" alt="3-Colour Checked Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
-                            <span class="absolute top-4 left-4 bg-brand-accent text-white text-[8px] font-bold tracking-widest uppercase py-1 px-3">Popular</span>
-                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
-                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
-                            </div>
-                        </div>
-                        <div class="space-y-1">
-                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">3-Colour Checked Stole</h3>
-                            <p class="text-xs text-brand-primary/50 italic">Heritage check pattern — a wardrobe icon</p>
-                            <p class="text-xs font-bold text-brand-primary pt-1">$345.00 CAD</p>
-                        </div>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
-                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
-                            <img src="images/product-6715.png" alt="Multi-Colour Check Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
-                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Ethically Sourced</span>
-                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
-                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
-                            </div>
-                        </div>
-                        <div class="space-y-1">
-                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">Multi-Colour Check Stole</h3>
-                            <p class="text-xs text-brand-primary/50 italic">Vibrant heritage — artisan dyed</p>
-                            <p class="text-xs font-bold text-brand-primary pt-1">$360.00 CAD</p>
-                        </div>
-                    </div>
-
-                    <!-- Product 4 -->
-                    <div class="group cursor-pointer" onclick="navigateTo('shop')">
-                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
-                            <img src="images/product-6791.png" alt="Basket Weave Stole" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
-                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Handcrafted</span>
-                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
-                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">Shop Now</span>
-                            </div>
-                        </div>
-                        <div class="space-y-1">
-                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">Basket Weave Stole</h3>
-                            <p class="text-xs text-brand-primary/50 italic">Architectural texture — understated luxury</p>
-                            <p class="text-xs font-bold text-brand-primary pt-1">$375.00 CAD</p>
-                        </div>
-                    </div>
-
+                    <button onclick="navigateTo('shop')" class="text-xs tracking-[0.2em] uppercase text-brand-primary font-semibold hover:text-brand-accent transition-colors flex items-center space-x-2">
+                        <span>Browse All Products</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </button>
                 </div>
             </section>
         </section>
@@ -1541,25 +1550,30 @@
             if (!container) return;
             container.innerHTML = '';
 
-            productCatalog.slice(0, 4).forEach(prod => {
+            // Instagram mosaic: first item spans 2 rows (tall), rest are square
+            const mosaicSpans = [
+                'row-span-2',   // 1st: tall
+                'row-span-1',   // 2nd: square
+                'row-span-1',   // 3rd: square
+                'row-span-2',   // 4th: tall (right side)
+                'row-span-1',   // 5th: square
+                'row-span-1',   // 6th: square
+            ];
+
+            productCatalog.slice(0, 6).forEach((prod, i) => {
                 const priceStr = currentCurrency === 'CAD' ? `$${prod.priceCAD.toFixed(2)} CAD` : `$${prod.priceUSD.toFixed(2)} USD`;
+                const span = mosaicSpans[i] || 'row-span-1';
                 container.innerHTML += `
-                    <div class="group cursor-pointer" onclick="openProductModal('${prod.id}')">
-                        <div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-4 relative rounded-sm">
-                            <img src="${prod.images[0]}" alt="${prod.title}" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-1000" loading="lazy">
-                            <span class="absolute top-4 left-4 bg-white text-brand-primary text-[8px] font-bold tracking-widest uppercase py-1 px-3">Ethically Sourced</span>
-                            <!-- Quick View hover badge -->
-                            <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/10 transition-all duration-300 flex items-end justify-center pb-6">
-                                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-brand-primary text-[9px] font-bold tracking-[0.2em] uppercase py-2 px-5 shadow-md rounded-sm">
-                                    Quick View
-                                </span>
-                            </div>
+                    <div class="group cursor-pointer relative overflow-hidden rounded-sm ${span}" onclick="openProductModal('${prod.id}')">
+                        <img src="${prod.images[0]}" alt="${prod.title}" class="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-700" loading="lazy">
+                        <!-- Instagram-style hover overlay -->
+                        <div class="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/50 transition-all duration-300 flex flex-col items-center justify-center gap-2">
+                            <svg class="w-7 h-7 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-[9px] font-bold tracking-[0.2em] uppercase">${prod.title}</span>
+                            <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-brand-accent text-[10px] font-bold">${priceStr}</span>
                         </div>
-                        <div class="space-y-1">
-                            <h3 class="font-serif text-lg text-brand-primary group-hover:text-brand-accent transition-colors font-bold">${prod.title}</h3>
-                            <p class="text-xs text-brand-primary/50 italic">${prod.tagline}</p>
-                            <p class="text-xs font-bold text-brand-primary pt-1">${priceStr}</p>
-                        </div>
+                        <!-- Small price tag at bottom -->
+                        <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-0 translate-y-1 group-hover:translate-y-0 transition-all duration-300"></div>
                     </div>
                 `;
             });
